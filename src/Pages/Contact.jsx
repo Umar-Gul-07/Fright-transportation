@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ContactInfo } from '../Utils/Data'
  
 
 function Contact () {
@@ -139,10 +140,10 @@ function Contact () {
               <ul className="list-unstyled ps-0 mb-0 list">
                 <li>Phone</li>
                 <li>
-                  <a href="tel:4065550120">(406) 555-0120</a>
+                  <a href="contact_phone">{ContactInfo.contact_phone}</a>
                 </li>
                 <li>
-                  <a href="tel:6845550102">(684) 555-0102</a>
+                  <a href="contact_phone">{ContactInfo.contact_phone}</a>
                 </li>
               </ul>
             </div>
@@ -153,10 +154,10 @@ function Contact () {
               <ul className="list-unstyled ps-0 mb-0 list">
                 <li>Email</li>
                 <li>
-                  <a href="mailto:insotrans@gmail.com">insotrans@gmail.com</a>
+                  <a href="mailto:contact_email">{ContactInfo.contact_email}</a>
                 </li>
                 <li>
-                  <a href="mailto:insotrans@gmail.com">insotrans@gmail.com</a>
+                  <a href="mailto:contact_email_yahoo">{ContactInfo.contact_email_yahoo}</a>
                 </li>
               </ul>
             </div>
@@ -167,7 +168,7 @@ function Contact () {
               <ul className="list-unstyled ps-0 mb-0 list">
                 <li>Location</li>
                 <li>
-                  <span>2118 Thornridge Cir. Syracuse,</span>
+                  <span>{ContactInfo.address}</span>
                 </li>
               </ul>
             </div>

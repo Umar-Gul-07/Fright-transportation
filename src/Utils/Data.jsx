@@ -1,7 +1,9 @@
 const ContactInfo = {
-    contact_phone: "+923029677678",
-    contact_email: "zararanwar1234321@gmail.com",
-    address: "Abbottabad Khyber Pakhtun Khowa",
+    contact_phone: "+92 307 5061710",
+    contact_email_yahoo: "jabbiinternational@yahoo.com",
+    contact_email: "jabbiinternational@yahoo.com",
+
+    address: "2-F, P.E.C.H.S Block-6, Near Delhi sweets, Shahrah e Faisal, Karachi",
     facebook: "https://facebook.com",
     twitter: "https://facebook.com",
     linkedin: "https://facebook.com",

@@ -109,16 +109,16 @@ const Home = () => {
                   </div>
                   <ul className="list-unstyled ps-0 mb-0 banner-button">
                     <li className="d-inline-block">
-                      <a className="default-btn style-1" href="about.html">
+                      <Link className="default-btn style-1" to="/about">
                         Learn More
                         <i className="ph-bold ph-arrow-right" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="d-inline-block">
-                      <a className="default-btn style-1" href="contact.html">
+                      <Link className="default-btn style-1" to="/contact">
                         Contact Us
                         <i className="ph-bold ph-arrow-right" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -235,25 +235,25 @@ const Home = () => {
                     <h2>01</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
                       <h3>
-                        <a href="services.html">Air Freight Services</a>
+                        <Link to="/services">Air Freight Services</Link>
                       </h3>
-                      <a className="icon" href="services.html">
+                      <Link className="icon" to="/services">
                         <i className="ph ph-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="hover-content">
                     <h2>01</h2>
                     <h3>
-                      <a href="services.html">Air Freight Services</a>
+                      <Link to="services">Air Freight Services</Link>
                     </h3>
                     <p>
                       Transportation is a vital aspect of modern life, shaping the way
                       people and goods move from one place to another.
                     </p>
-                    <a className="icon" href="services.html">
+                    <Link className="icon" to="services">
                       <i className="ph ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -275,25 +275,25 @@ const Home = () => {
                     <h2>02</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
                       <h3>
-                        <a href="services.html">Logistic Services</a>
+                        <Link to="services">Logistic Services</Link>
                       </h3>
-                      <a className="icon" href="services.html">
+                      <Link className="icon" href="services">
                         <i className="ph ph-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="hover-content">
                     <h2>02</h2>
                     <h3>
-                      <a href="services.html">Logistic Services</a>
+                      <Link to="services">Logistic Services</Link>
                     </h3>
                     <p>
                       Transportation is a vital aspect of modern life, shaping the way
                       people and goods move from one place to another.
                     </p>
-                    <a className="icon" href="services.html">
+                    <Link className="icon" to="services">
                       <i className="ph ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -315,25 +315,25 @@ const Home = () => {
                     <h2>03</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
                       <h3>
-                        <a href="services.html">Road Transport</a>
+                        <Link href="services">Road Transport</Link>
                       </h3>
-                      <a className="icon" href="services.html">
+                      <Link className="icon" href="services">
                         <i className="ph ph-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="hover-content">
                     <h2>03</h2>
                     <h3>
-                      <a href="services.html">Road Transport</a>
+                      <Link to="services">Road Transport</Link>
                     </h3>
                     <p>
                       Transportation is a vital aspect of modern life, shaping the way
                       people and goods move from one place to another.
                     </p>
-                    <a className="icon" href="services.html">
+                    <Link className="icon" to="services">
                       <i className="ph ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

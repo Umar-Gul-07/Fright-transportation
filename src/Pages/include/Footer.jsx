@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom"
+import { ContactInfo } from "../../Utils/Data"
 function Footer() {
 
     return (
@@ -81,29 +82,25 @@ function Footer() {
                                     <h3>Useful link</h3>
                                     <ul className="list-unstyled ps-0 mb-0">
                                         <li>
-                                            <a className="text-decoration-none" href="index.html">
+                                            <Link className="text-decoration-none"  to="/">
                                                 Home
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a className="text-decoration-none" href="about.html">
+                                            <Link className="text-decoration-none" to="/about" >
                                                 About Us
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a className="text-decoration-none" href="services.html">
+                                            <Link className="text-decoration-none" to="/services">
                                                 Services
-                                            </a>
+                                            </Link>
                                         </li>
+                                         
                                         <li>
-                                            <a className="text-decoration-none" href="portfolio.html">
-                                                News
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="text-decoration-none" href="contact.html">
+                                            <Link className="text-decoration-none" to="/contact">
                                                 Contact Us
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,22 +123,24 @@ function Footer() {
                                     <ul className="list-unstyled ps-0 contact-list">
                                         <li className="position-relative">
                                             <i className="ph-fill ph-phone" />
-                                            <a href="tel:123456789">+123 456 789</a>
+                                            <a href="tel:123456789">{ContactInfo.contact_phone}</a>
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-fill ph-envelope" />
-                                            <a href="mailto:insotrans@gmail.com">insotrans@gmail.com</a>
+                                            <a href="mailto:jabbiinternational@yahoo.com">{ContactInfo.contact_email}</a>
+                                            <a href="mailto:jabbiinternational@gmail.com">{ContactInfo.contact_email_yahoo}</a>
+
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-bold ph-map-pin" />
-                                            <span>South Wales, Australia </span>
+                                            <span>{ContactInfo.address}</span>
                                         </li>
                                     </ul>
                                     <div className="times">
                                         <h6>Open Hours :</h6>
                                         <p>Mon - Sat: 8 am - 5 pm.</p>
                                         <span>
-                                            Friday: <strong>Closed</strong>
+                                            Sunday: <strong>Closed</strong>
                                         </span>
                                     </div>
                                 </div>
