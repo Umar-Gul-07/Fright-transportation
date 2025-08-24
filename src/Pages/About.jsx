@@ -203,7 +203,8 @@ function About() {
                                                 <a
                                                     href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                                                     className="play-btn popup-youtube"
-                                                    target="_blank"
+                                                    target="_blank" rel="noreferrer"
+                                                    rel="noreferrer"
                                                 >
                                                     <i className="ph-fill ph-play" />
                                                 </a>
@@ -305,22 +306,22 @@ function About() {
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-instagram-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-youtube-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
@@ -361,22 +362,22 @@ function About() {
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-instagram-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-youtube-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
@@ -417,22 +418,22 @@ function About() {
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-instagram-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-fill ph-youtube-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
