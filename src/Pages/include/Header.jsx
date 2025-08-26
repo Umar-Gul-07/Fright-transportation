@@ -6,7 +6,9 @@ function Header() {
   const location = useLocation();
 
   const toggleMenu = () => {
+    console.log('Toggle clicked, current state:', isMenuOpen);
     setIsMenuOpen(!isMenuOpen);
+    console.log('New state will be:', !isMenuOpen);
   };
 
   const isActive = (path) => {
@@ -105,7 +107,8 @@ function Header() {
       </div>
 
       {/* Mobile Menu Container - Outside navbar-area */}
-      <div className={`mean-menu ${isMenuOpen ? 'mean-container' : ''}`}>
+      <div className={`mean-menu ${isMenuOpen ? 'mean-container' : ''}`} style={{display: isMenuOpen ? 'block' : 'none'}}>
+        {console.log('Mobile menu rendered, isMenuOpen:', isMenuOpen)}
         <div className={`navbar-collapse ${isMenuOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>
           <button 
             className="mobile-menu-close" 

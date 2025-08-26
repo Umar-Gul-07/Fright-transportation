@@ -389,6 +389,76 @@ Header Area CSS
   transform: scale(1.1);
 }
 
+/* Default Mobile Menu Styles (hidden by default) */
+.mean-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--whiteColor);
+  z-index: 999;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  /* Debug: Add a border to see if it's positioned correctly */
+  border: 2px solid red;
+}
+
+.mean-menu.mean-container {
+  left: 0;
+}
+
+.mean-menu .navbar-collapse {
+  padding: 80px 20px 20px;
+  position: relative;
+}
+
+.mean-menu .navbar-nav {
+  flex-direction: column;
+  margin: 0;
+}
+
+.mean-menu .navbar-nav .nav-item {
+  margin: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mean-menu .navbar-nav .nav-item .nav-link {
+  padding: 15px 0;
+  color: var(--mainColor);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: none;
+  border: none;
+}
+
+.mean-menu .navbar-nav .nav-item .nav-link:hover,
+.mean-menu .navbar-nav .nav-item .nav-link.active {
+  color: var(--optionalColor);
+  background: transparent;
+}
+
+.mean-menu .navbar-nav .nav-item .nav-link::before {
+  display: none;
+}
+
+.mean-menu .others-option {
+  margin: 20px 0 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.mean-menu .others-option .option-item {
+  margin: 0 0 15px 0;
+}
+
+.mean-menu .others-option .option-item .icon a {
+  font-size: 20px;
+  color: var(--mainColor);
+}
+
 .nofa-responsive-nav {
   display: none;
 }
@@ -780,6 +850,7 @@ Header Area CSS
   
   /* Mobile Menu Container */
   .mean-menu {
+    display: block !important;
     position: fixed;
     top: 0;
     left: -100%;
@@ -899,6 +970,7 @@ Header Area CSS
   
   /* Mobile Menu Container */
   .mean-menu {
+    display: block !important;
     position: fixed;
     top: 0;
     left: -100%;
