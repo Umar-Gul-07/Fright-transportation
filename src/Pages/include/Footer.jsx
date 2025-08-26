@@ -226,7 +226,7 @@ function Footer() {
                         >
                             <div className="col-lg-6 col-md-7">
                                 <div className="copyright-content">
-                                    <p>© 2024 Insorans - Transport Services. All rights reserved.</p>
+                                    <p>© 2025 jabbiinternational, a fright transportation Services. All rights reserved.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-5">
