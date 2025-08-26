@@ -358,6 +358,37 @@ Header Area CSS
   background-color: var(--mainColor);
 }
 
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Menu Close Button */
+.mobile-menu-close {
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+  color: var(--optionalColor) !important;
+  transform: scale(1.1);
+}
+
 .nofa-responsive-nav {
   display: none;
 }
@@ -377,6 +408,56 @@ Header Area CSS
 }
 .nofa-responsive-nav .others-option.style-3 .option-item .icon a:hover {
   color: var(--optionalColor);
+}
+
+/* Mobile Navigation Toggle Button */
+.navbar-toggler {
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--mainColor);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: var(--mainColor);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: -8px;
+}
+
+/* Active state for toggle button */
+.navbar-toggler.active .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.active .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.active .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
 }
 
 .nofa-nav {
@@ -680,97 +761,94 @@ Header Area CSS
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  
+  /* Mobile Navigation */
   .nofa-responsive-nav {
     display: block;
   }
   .nofa-responsive-nav .nofa-responsive-menu {
     position: relative;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav {
-    margin-top: 65px;
-    background-color: var(--whiteColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul {
-    border: none !important;
-    font-size: 16px;
-    font-family: var(--fontFamily);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a {
-    border-top-color: #eeeeee;
-    color: var(--blackColor);
-    text-transform: unset;
-    font-weight: 600;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a i {
-    display: none;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a.mean-expand {
-    width: 50%;
-    height: 28px;
-    text-align: end;
-    background: transparent;
-    padding: 10px !important;
-    font-size: 22px !important;
-    font-weight: normal;
-    border-left: none !important;
-    border-bottom: none !important;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a.active {
-    color: var(--mainColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li li a {
-    font-size: 15px;
-    color: var(--blackColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .navbar-nav {
-    max-height: 60vh;
-    background-color: var(--whiteColor);
-    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .nofa-responsive-nav .mean-container a.meanmenu-reveal {
-    top: 5px;
-    padding: 0;
-    width: 30px;
-    padding-top: 0;
-    margin-top: 5px;
-    color: var(--blackColor);
-  }
-  .nofa-responsive-nav .mean-container a.meanmenu-reveal span {
-    top: 8px;
-    height: 3px;
-    margin-top: -9px;
-    border-radius: 3px;
-    position: relative;
-    background: var(--blackColor);
-  }
-  .nofa-responsive-nav .mean-container .mean-bar {
-    background: transparent;
-    position: absolute;
-    z-index: 99;
-    padding: 0;
-    top: 0;
-  }
-  .nofa-responsive-nav .dropdown-toggle::after {
-    display: none !important;
-  }
-  .nofa-responsive-nav .others-option {
-    position: absolute !important;
-    right: 43px;
-    top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .nofa-responsive-nav .logo {
     width: 50%;
     z-index: 99;
     position: relative;
   }
-  .nofa-responsive-nav.style-3 .mean-container a.meanmenu-reveal {
-    color: var(--whiteColor);
-  }
-  .nofa-responsive-nav.style-3 .mean-container a.meanmenu-reveal span {
+  
+  /* Mobile Menu Container */
+  .mean-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
     background-color: var(--whiteColor);
+    z-index: 999;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
   }
+  
+  .mean-menu.mean-container {
+    left: 0;
+  }
+  
+  .mean-menu .navbar-collapse {
+    padding: 80px 20px 20px;
+    position: relative;
+  }
+  
+
+  
+  .mean-menu .navbar-nav {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .mean-menu .navbar-nav .nav-item {
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link {
+    padding: 15px 0;
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    border: none;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link:hover,
+  .mean-menu .navbar-nav .nav-item .nav-link.active {
+    color: var(--optionalColor);
+    background: transparent;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link::before {
+    display: none;
+  }
+  
+  /* Mobile Menu Options */
+  .mean-menu .others-option {
+    margin: 20px 0 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .mean-menu .others-option .option-item {
+    margin: 0 0 15px 0;
+  }
+  
+  .mean-menu .others-option .option-item .icon a {
+    font-size: 20px;
+    color: var(--mainColor);
+  }
+  
+  /* Hide desktop navigation on mobile */
   .nofa-nav {
     display: none;
   }
@@ -802,100 +880,94 @@ Header Area CSS
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  
+  /* Mobile Navigation */
   .nofa-responsive-nav {
     display: block;
   }
   .nofa-responsive-nav .nofa-responsive-menu {
     position: relative;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav {
-    margin-top: 65px;
-    background-color: var(--whiteColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul {
-    border: none !important;
-    font-size: 16px;
-    font-family: var(--fontFamily);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a {
-    border-top-color: #eeeeee;
-    color: var(--blackColor);
-    text-transform: unset;
-    font-weight: 600;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a i {
-    display: none;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a.mean-expand {
-    width: 50%;
-    height: 28px;
-    text-align: end;
-    background: transparent;
-    padding: 10px !important;
-    font-size: 22px !important;
-    font-weight: normal;
-    border-left: none !important;
-    border-bottom: none !important;
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li a.active {
-    color: var(--mainColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .mean-nav ul li li a {
-    font-size: 15px;
-    color: var(--blackColor);
-  }
-  .nofa-responsive-nav .nofa-responsive-menu.mean-container .navbar-nav {
-    max-height: 60vh;
-    background-color: var(--whiteColor);
-    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .nofa-responsive-nav .mean-container a.meanmenu-reveal {
-    top: 0;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    padding-top: 0;
-    margin-top: 17px;
-    color: var(--blackColor);
-  }
-  .nofa-responsive-nav .mean-container a.meanmenu-reveal span {
-    top: 8px;
-    height: 3px;
-    margin-top: -9px;
-    border-radius: 3px;
-    position: relative;
-    background: var(--blackColor);
-  }
-  .nofa-responsive-nav .mean-container .mean-bar {
-    background: transparent;
-    position: absolute;
-    z-index: 99;
-    padding: 0;
-  }
-  .nofa-responsive-nav .dropdown-toggle::after {
-    display: none !important;
-  }
-  .nofa-responsive-nav .others-option {
-    position: absolute !important;
-    right: 47px;
-    top: 15px;
-  }
-  .nofa-responsive-nav .others-option .option-item .icon {
-    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .nofa-responsive-nav .logo {
     width: 50%;
     z-index: 99;
     position: relative;
   }
-  .nofa-responsive-nav.style-3 .mean-container a.meanmenu-reveal {
-    color: var(--whiteColor);
-  }
-  .nofa-responsive-nav.style-3 .mean-container a.meanmenu-reveal span {
+  
+  /* Mobile Menu Container */
+  .mean-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    height: 100vh;
     background-color: var(--whiteColor);
+    z-index: 999;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
   }
+  
+  .mean-menu.mean-container {
+    left: 0;
+  }
+  
+  .mean-menu .navbar-collapse {
+    padding: 80px 25px 25px;
+    position: relative;
+  }
+  
+
+  
+  .mean-menu .navbar-nav {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .mean-menu .navbar-nav .nav-item {
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link {
+    padding: 18px 0;
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    border: none;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link:hover,
+  .mean-menu .navbar-nav .nav-item .nav-link.active {
+    color: var(--optionalColor);
+    background: transparent;
+  }
+  
+  .mean-menu .navbar-nav .nav-item .nav-link::before {
+    display: none;
+  }
+  
+  /* Mobile Menu Options */
+  .mean-menu .others-option {
+    margin: 25px 0 0 0;
+    padding-top: 25px;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .mean-menu .others-option .option-item {
+    margin: 0 0 20px 0;
+  }
+  
+  .mean-menu .others-option .option-item .icon a {
+    font-size: 22px;
+    color: var(--mainColor);
+  }
+  
+  /* Hide desktop navigation on mobile */
   .nofa-nav {
     display: none;
   }
