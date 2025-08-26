@@ -46,65 +46,30 @@ function Header() {
                   <img src="assets/images/logo.png" alt="logo" />
                 </Link>
                 
-                {/* Mobile Menu Container */}
-                <div className={`mean-menu ${isMenuOpen ? 'mean-container' : ''}`}>
-                  <div className={`navbar-collapse ${isMenuOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>
-                    <button 
-                      className="mobile-menu-close" 
-                      onClick={toggleMenu}
-                      style={{
-                        position: 'absolute',
-                        top: '20px',
-                        right: '20px',
-                        fontSize: '30px',
-                        color: 'var(--mainColor)',
-                        cursor: 'pointer',
-                        zIndex: 1000,
-                        width: '30px',
-                        height: '30px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        background: 'transparent',
-                        border: 'none'
-                      }}
-                    >
-                      ×
-                    </button>
-                    <ul className="navbar-nav">
-                      <li className="nav-item">
-                        <Link to="/" className={`nav-link ${isActive('/')}`}>
-                          Home
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/about" className={`nav-link ${isActive('/about')}`}>
-                          About Us
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/services" className={`nav-link ${isActive('/services')}`}>
-                          Services
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link to="/contact" className={`nav-link ${isActive('/contact')}`}>
-                          Contact
-                        </Link>
-                      </li>
-                    </ul>
-                    
-                    {/* Mobile Menu Options */}
-                    <div className="others-option d-lg-none">
-                      <div className="option-item">
-                        <div className="icon position-relative">
-                          <Link to="/contact">
-                            <i className="ph-bold ph-user-plus" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Desktop Menu Container */}
+                <div className="navbar-collapse">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <Link to="/" className={`nav-link ${isActive('/')}`}>
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="/about" className={`nav-link ${isActive('/about')}`}>
+                        About Us
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="/services" className={`nav-link ${isActive('/services')}`}>
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="/contact" className={`nav-link ${isActive('/contact')}`}>
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Desktop Menu Options */}
@@ -136,6 +101,67 @@ function Header() {
         
         <div className="navbar-bg-shape">
           <img src="assets/images/top-header-bg.png" alt="shape" />
+        </div>
+      </div>
+
+      {/* Mobile Menu Container - Outside navbar-area */}
+      <div className={`mean-menu ${isMenuOpen ? 'mean-container' : ''}`}>
+        <div className={`navbar-collapse ${isMenuOpen ? 'show' : ''}`} onClick={(e) => e.stopPropagation()}>
+          <button 
+            className="mobile-menu-close" 
+            onClick={toggleMenu}
+            style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              fontSize: '30px',
+              color: 'var(--mainColor)',
+              cursor: 'pointer',
+              zIndex: 1000,
+              width: '30px',
+              height: '30px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: 'transparent',
+              border: 'none'
+            }}
+          >
+            ×
+          </button>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link to="/" className={`nav-link ${isActive('/')}`}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className={`nav-link ${isActive('/about')}`}>
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/services" className={`nav-link ${isActive('/services')}`}>
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className={`nav-link ${isActive('/contact')}`}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+          
+          {/* Mobile Menu Options */}
+          <div className="others-option d-lg-none">
+            <div className="option-item">
+              <div className="icon position-relative">
+                <Link to="/contact">
+                  <i className="ph-bold ph-user-plus" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
