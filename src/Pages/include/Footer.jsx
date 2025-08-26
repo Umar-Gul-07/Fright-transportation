@@ -117,7 +117,15 @@ function Footer() {
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-bold ph-map-pin" />
-                                            <span>{ContactInfo.address}</span>
+                                            <a 
+                                                href={ContactInfo.googleMapsDirectUrl} 
+                                                target="_blank" 
+                                                rel="noreferrer"
+                                                style={{ color: 'inherit', textDecoration: 'none' }}
+                                                title="Click to open in Google Maps"
+                                            >
+                                                {ContactInfo.address}
+                                            </a>
                                         </li>
                                     </ul>
                                     <div className="times">

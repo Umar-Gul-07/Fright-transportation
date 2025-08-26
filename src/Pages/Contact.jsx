@@ -115,8 +115,14 @@ function Contact () {
         <div className="col-lg-6">
           <div className="single-contact-image">
             <img
-              src="assets/images/single-contact-image.html"
-              alt="contact-image"
+               src="assets/images/about/about1.jpg"
+               alt="Contact Us"
+               style={{
+                 width: '100%',
+                 height: 'auto',
+                 borderRadius: '10px',
+                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
+               }}
             />
           </div>
         </div>
@@ -168,7 +174,15 @@ function Contact () {
               <ul className="list-unstyled ps-0 mb-0 list">
                 <li>Location</li>
                 <li>
-                  <span>{ContactInfo.address}</span>
+                                     <a 
+                     href={ContactInfo.googleMapsDirectUrl} 
+                     target="_blank" 
+                     rel="noreferrer"
+                     style={{ color: 'inherit', textDecoration: 'none' }}
+                     title="Click to open in Google Maps"
+                   >
+                    {ContactInfo.address}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -176,14 +190,47 @@ function Contact () {
         </div>
         <div className="col-lg-9">
           <div className="contact-map-info">
-            <iframe
-              title="Google Maps - Contact Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52466279.074015416!2d-161.47077103593702!3d36.61946473137947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1716374957751!5m2!1sen!2sbd"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+             <div 
+               className="map-placeholder"
+               style={{
+                 width: '100%',
+                 height: '400px',
+                 background: 'linear-gradient(45deg, #f0f0f0, #e0e0e0)',
+                 borderRadius: '10px',
+                 display: 'flex',
+                 flexDirection: 'column',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+                 cursor: 'pointer',
+                 position: 'relative',
+                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
+               }}
+               onClick={() => window.open(ContactInfo.googleMapsDirectUrl, '_blank')}
+               title="Click to open Google Maps"
+             >
+               <div style={{ fontSize: '48px', marginBottom: '20px' }}>🗺️</div>
+               <h3 style={{ margin: '0 0 10px 0', color: '#333' }}>Delhi Sweets Location</h3>
+               <p style={{ margin: '0 0 20px 0', color: '#666', textAlign: 'center' }}>
+                 {ContactInfo.address}
+               </p>
+               <button 
+                 style={{
+                   padding: '12px 24px',
+                   backgroundColor: '#25d366',
+                   color: 'white',
+                   border: 'none',
+                   borderRadius: '6px',
+                   cursor: 'pointer',
+                   fontSize: '16px',
+                   fontWeight: '500',
+                   transition: 'all 0.3s ease'
+                 }}
+                 onMouseEnter={(e) => e.target.style.backgroundColor = '#128c7e'}
+                 onMouseLeave={(e) => e.target.style.backgroundColor = '#25d366'}
+               >
+                 Open in Google Maps
+               </button>
+             </div>
           </div>
         </div>
       </div>
