@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ContactInfo } from "../../Utils/Data"
+import { ContactInfo, SocialMediaLinks } from "../../Utils/Data"
 function Footer() {
 
     return (
@@ -41,28 +41,7 @@ function Footer() {
                                             <button type="submit">Subscribe</button>
                                         </div>
                                     </form>
-                                    <ul className="list-unstyled ps-0 mb-0 social-link">
-                                        <li className="d-inline-block">
-                                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                                                <i className="ph-bold ph-facebook-logo" />
-                                            </a>
-                                        </li>
-                                        <li className="d-inline-block">
-                                            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                                                <i className="ph-fill ph-youtube-logo" />
-                                            </a>
-                                        </li>
-                                        <li className="d-inline-block">
-                                            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                                                <i className="ph-fill ph-twitter-logo" />
-                                            </a>
-                                        </li>
-                                        <li className="d-inline-block">
-                                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                                                <i className="ph-bold ph-instagram-logo" />
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <SocialMediaLinks />
                                 </div>
                             </div>
                             <div
@@ -129,7 +108,12 @@ function Footer() {
                                             <i className="ph-fill ph-envelope" />
                                             <a href="mailto:jabbiinternational@yahoo.com">{ContactInfo.contact_email}</a>
                                             <a href="mailto:jabbiinternational@gmail.com">{ContactInfo.contact_email_yahoo}</a>
-
+                                        </li>
+                                        <li className="position-relative">
+                                            <i className="ph-bold ph-whatsapp-logo" />
+                                            <a href={`https://wa.me/${ContactInfo.whatsapp.replace(/\D/g, '')}?text=Hello! I'm interested in your services.`} target="_blank" rel="noreferrer">
+                                                WhatsApp: {ContactInfo.whatsapp}
+                                            </a>
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-bold ph-map-pin" />

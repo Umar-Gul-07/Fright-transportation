@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './include/Header'
 import Footer from './include/Footer'
+import { WhatsAppButton } from '../Utils/Data'
 
 function Base({ children }) {
 
@@ -25,7 +26,10 @@ function Base({ children }) {
 
             <Header />
             {children}
+
             <Footer />
+            <WhatsAppButton />
+            
 
         </>
     )

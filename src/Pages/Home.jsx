@@ -1,9 +1,29 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { ContactInfo } from '../Utils/Data'
 
 const Home = () => {
 
+  // Function to replace hardcoded social media links
+  const replaceSocialLinks = () => {
+    const socialLinks = document.querySelectorAll('a[href*="instagram.com"], a[href*="twitter.com"], a[href*="facebook.com"], a[href*="youtube.com"]');
+    socialLinks.forEach(link => {
+      if (link.href.includes('instagram.com')) {
+        link.href = ContactInfo.instagram;
+      } else if (link.href.includes('twitter.com')) {
+        link.href = ContactInfo.twitter;
+      } else if (link.href.includes('facebook.com')) {
+        link.href = ContactInfo.facebook;
+      } else if (link.href.includes('youtube.com')) {
+        link.href = ContactInfo.youtube;
+      }
+    });
+  };
+
   useEffect(() => {
+    // Replace social media links
+    replaceSocialLinks();
+
     // Counter animation functionality
     const observerOptions = {
       threshold: 0.5,
@@ -1966,6 +1986,7 @@ const Home = () => {
         </div>
       </div>
 
+ 
 
 
 
