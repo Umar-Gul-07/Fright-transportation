@@ -61,7 +61,7 @@ function Footer() {
                                     <h3>Useful link</h3>
                                     <ul className="list-unstyled ps-0 mb-0">
                                         <li>
-                                            <Link className="text-decoration-none"  to="/">
+                                            <Link className="text-decoration-none" to="/">
                                                 Home
                                             </Link>
                                         </li>
@@ -75,7 +75,7 @@ function Footer() {
                                                 Services
                                             </Link>
                                         </li>
-                                         
+
                                         <li>
                                             <Link className="text-decoration-none" to="/contact">
                                                 Contact Us
@@ -117,9 +117,9 @@ function Footer() {
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-bold ph-map-pin" />
-                                            <a 
-                                                href={ContactInfo.googleMapsDirectUrl} 
-                                                target="_blank" 
+                                            <a
+                                                href={ContactInfo.googleMapsDirectUrl}
+                                                target="_blank"
                                                 rel="noreferrer"
                                                 style={{ color: 'inherit', textDecoration: 'none' }}
                                                 title="Click to open in Google Maps"

@@ -136,7 +136,7 @@ function About() {
                                 animationFillMode: "both"
                             }}
                         >
-                            <h1>About Us</h1>
+                            <h1>About Jabbi International</h1>
                             <ul className="list-unstyled mb-0 ps-0">
                                 <li className="d-inline-block position-relative">
                                     <Link to="/">Home</Link>
@@ -176,23 +176,24 @@ function About() {
                                 <div className="about-content">
                                     <div className="section-title">
                                         <span className="sub-title position-relative d-block">
-                                            About Us
+                                            About Jabbi International
                                         </span>
-                                        <h2>Welcome to our Transport Company.</h2>
+                                        <h2>Your Trusted Partner in Global Freight Transportation</h2>
                                     </div>
                                     <p>
-                                        The efficiency and reliability of transport systems play a crucial
-                                        role in connecting communities, driving economic growth, and
-                                        fostering global interactions. With advancements in technology,
+                                        Founded with a vision to provide reliable and efficient freight transportation 
+                                        services, Jabbi International has established itself as a leading logistics 
+                                        company specializing in import/export operations from Karachi Port.
                                     </p>
                                     <h6 className="growth">
-                                        Competently Implement efficient e - Commerce without cross-unit
-                                        growth strategies.
+                                        With years of experience in international shipping, customs clearance, and 
+                                        supply chain management, we ensure your cargo reaches its destination safely 
+                                        and on schedule.
                                     </h6>
                                     <ul className="list-unstyled ps-0 mb-0 about-btn">
                                         <li className="d-inline-block">
-                                            <Link className="default-btn style-1" to="/about">
-                                                Learn More
+                                            <Link className="default-btn style-1" to="/services">
+                                                Our Services
                                                 <i className="ph-bold ph-arrow-right" />
                                             </Link>
                                         </li>
@@ -201,12 +202,12 @@ function About() {
                                                 <div className="image">
                                                     <img
                                                         src="assets/images/about/about1.jpg"
-                                                        alt="about-image"
+                                                        alt="CEO"
                                                     />
                                                 </div>
                                                 <div className="content">
-                                                    <h3>Nosaki Car</h3>
-                                                    <p>Product Designer</p>
+                                                    <h3>Ahmed Jabbi</h3>
+                                                    <p>CEO & Founder</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -218,16 +219,15 @@ function About() {
                                     <div className="row align-items-center">
                                         <div className="col-lg-8 col-sm-8">
                                             <div className="image position-relative z-1">
-                                                <img src="assets/images/about/about2.jpg" alt="about-image" />
+                                                <img src="assets/images/about/about2.jpg" alt="Karachi Port Operations" />
                                                 <a
                                                     href="http://www.youtube.com/watch?v=0O2aH4XLbto"
                                                     className="play-btn popup-youtube"
                                                     target="_blank" rel="noreferrer"
-                                                    rel="noreferrer"
                                                 >
                                                     <i className="ph-fill ph-play" />
                                                 </a>
-                                                <span className="experience">28+ Years Experience</span>
+                                                <span className="experience">15+ Years Experience</span>
                                             </div>
                                         </div>
                                         <div className="col-lg-4 col-sm-4">
@@ -236,19 +236,19 @@ function About() {
                                                     <h2>
                                                         <span className="counter">50</span>+
                                                     </h2>
-                                                    <p>International Airports</p>
+                                                    <p>Countries Served</p>
                                                 </div>
                                                 <div className="content-info">
                                                     <h2>
-                                                        <span className="counter">750</span>+
+                                                        <span className="counter">1000</span>+
                                                     </h2>
-                                                    <p>Branches The World</p>
+                                                    <p>Successful Shipments</p>
                                                 </div>
                                                 <div className="content-info">
                                                     <h2>
-                                                        <span className="counter">96</span>K+
+                                                        <span className="counter">24</span>/7
                                                     </h2>
-                                                    <p>Deliveries Per Day</p>
+                                                    <p>Customer Support</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,12 +282,12 @@ function About() {
                                         <span className="d-block sub-title position-relative">
                                             Our Team
                                         </span>
-                                        <h2>Meet Your Team Membar</h2>
+                                        <h2>Meet Our Expert Team</h2>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-sm-4">
-                                    <Link className="default-btn style-1" to="/team">
-                                        See All
+                                    <Link className="default-btn style-1" to="/contact">
+                                        Contact Us
                                         <i className="ph-bold ph-arrow-right" />
                                     </Link>
                                 </div>
@@ -313,39 +313,34 @@ function About() {
                             >
                                 <div className="single-team-info position-relative z-1">
                                     <div className="image">
-                                        <img src="assets/images/team/team1.jpg" alt="team-image" />
+                                        <img src="assets/images/team/team1.jpg" alt="CEO" />
                                     </div>
                                     <div className="content d-flex align-items-end justify-content-between">
                                         <div className="text">
                                             <h3>
-                                                <Link to="/team">Brooklyn Simmons</Link>
+                                                <Link to="/contact">Ahmed Jabbi</Link>
                                             </h3>
-                                            <p>Designer</p>
+                                            <p>CEO & Founder</p>
                                         </div>
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-bold ph-instagram-logo" />
+                                                    <a href={ContactInfo.linkedin} target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-linkedin-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.twitter} target="_blank" rel="noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-fill ph-youtube-logo" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.facebook} target="_blank" rel="noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <Link to="/team" className="active">
+                                                    <Link to="/contact" className="active">
                                                         <i className="ph-bold ph-plus" />
                                                     </Link>
                                                 </li>
@@ -369,39 +364,34 @@ function About() {
                             >
                                 <div className="single-team-info position-relative z-1">
                                     <div className="image">
-                                        <img src="assets/images/team/team2.jpg" alt="team-image" />
+                                        <img src="assets/images/team/team2.jpg" alt="Operations Manager" />
                                     </div>
                                     <div className="content d-flex align-items-end justify-content-between">
                                         <div className="text">
                                             <h3>
-                                                <Link to="/team">Brooklyn Simmons</Link>
+                                                <Link to="/contact">Muhammad Ali</Link>
                                             </h3>
-                                            <p>Designer</p>
+                                            <p>Operations Manager</p>
                                         </div>
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-bold ph-instagram-logo" />
+                                                    <a href={ContactInfo.linkedin} target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-linkedin-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.twitter} target="_blank" rel="noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-fill ph-youtube-logo" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.facebook} target="_blank" rel="noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <Link to="/team" className="active">
+                                                    <Link to="/contact" className="active">
                                                         <i className="ph-bold ph-plus" />
                                                     </Link>
                                                 </li>
@@ -425,39 +415,34 @@ function About() {
                             >
                                 <div className="single-team-info position-relative z-1">
                                     <div className="image">
-                                        <img src="assets/images/team/team3.jpg" alt="team-image" />
+                                        <img src="assets/images/team/team3.jpg" alt="Customer Relations" />
                                     </div>
                                     <div className="content d-flex align-items-end justify-content-between">
                                         <div className="text">
                                             <h3>
-                                                <Link to="/team">Brooklyn Simmons</Link>
+                                                <Link to="/contact">Fatima Khan</Link>
                                             </h3>
-                                            <p>Designer</p>
+                                            <p>Customer Relations</p>
                                         </div>
                                         <div className="icon">
                                             <ul className="list-unstyled ps-0 mb-0">
                                                 <li>
-                                                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-bold ph-instagram-logo" />
+                                                    <a href={ContactInfo.linkedin} target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-linkedin-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.twitter} target="_blank" rel="noreferrer">
                                                         <i className="ph-fill ph-twitter-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
-                                                        <i className="ph-fill ph-youtube-logo" />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" rel="noopener noreferrer">
+                                                    <a href={ContactInfo.facebook} target="_blank" rel="noreferrer">
                                                         <i className="ph-bold ph-facebook-logo" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <Link to="/team" className="active">
+                                                    <Link to="/contact" className="active">
                                                         <i className="ph-bold ph-plus" />
                                                     </Link>
                                                 </li>
@@ -491,9 +476,9 @@ function About() {
                                 <div className="testimonial-content">
                                     <div className="section-title">
                                         <span className="d-block sub-title position-relative">
-                                            Our Testimonial
+                                            Client Testimonials
                                         </span>
-                                        <h2>Our Client's Feedback</h2>
+                                        <h2>What Our Clients Say</h2>
                                     </div>
                                 </div>
                             </div>
@@ -502,28 +487,24 @@ function About() {
                                     <div className="testimonial-slider owl-carousel">
                                         <div className="single-testimonial-card">
                                             <h6 className="d-flex align-items-center">
-                                                4.5
+                                                5.0
                                                 <i className="ph-fill ph-star" />
                                             </h6>
                                             <p>
-                                                Identifying and mitigating risks associated with global
-                                                logistics, such as geopolitical issues, natural
-                                                disasters, and supply chain disruptions. Knowledge of
-                                                various shipping methods,including air, sea, and land
-                                                transport. Familiarity with freight forwarding, customs
-                                                regulations, and documentation required for
-                                                international shipments.
+                                                "Jabbi International has been our trusted partner for over 5 years. 
+                                                Their expertise in customs clearance and timely delivery has helped 
+                                                us maintain our supply chain efficiently. Highly recommended!"
                                             </p>
                                             <div className="user d-flex align-items-center">
                                                 <div className="image">
                                                     <img
                                                         src="assets/images/testimonial/testimonial1.jpg"
-                                                        alt="testimonial-image"
+                                                        alt="Abdul Rahman"
                                                     />
                                                 </div>
                                                 <div className="content">
-                                                    <h3>Cary Marathi</h3>
-                                                    <p>Designer</p>
+                                                    <h3>Abdul Rahman</h3>
+                                                    <p>Import Manager, Textile Industries Ltd</p>
                                                 </div>
                                             </div>
                                             <div className="quote-icon">
@@ -535,28 +516,24 @@ function About() {
                                         </div>
                                         <div className="single-testimonial-card">
                                             <h6 className="d-flex align-items-center">
-                                                4.5
+                                                5.0
                                                 <i className="ph-fill ph-star" />
                                             </h6>
                                             <p>
-                                                Identifying and mitigating risks associated with global
-                                                logistics, such as geopolitical issues, natural
-                                                disasters, and supply chain disruptions. Knowledge of
-                                                various shipping methods,including air, sea, and land
-                                                transport. Familiarity with freight forwarding, customs
-                                                regulations, and documentation required for
-                                                international shipments.
+                                                "Excellent service! They handle our electronics exports with utmost 
+                                                care and provide real-time tracking. Professional team with deep 
+                                                knowledge of international shipping regulations."
                                             </p>
                                             <div className="user d-flex align-items-center">
                                                 <div className="image">
                                                     <img
                                                         src="assets/images/testimonial/testimonial1.jpg"
-                                                        alt="testimonial-image"
+                                                        alt="Sarah Ahmed"
                                                     />
                                                 </div>
                                                 <div className="content">
-                                                    <h3>Cary Marathi</h3>
-                                                    <p>Designer</p>
+                                                    <h3>Sarah Ahmed</h3>
+                                                    <p>Export Coordinator, Electronics Corp</p>
                                                 </div>
                                             </div>
                                             <div className="quote-icon">
@@ -568,28 +545,24 @@ function About() {
                                         </div>
                                         <div className="single-testimonial-card">
                                             <h6 className="d-flex align-items-center">
-                                                4.5
+                                                5.0
                                                 <i className="ph-fill ph-star" />
                                             </h6>
                                             <p>
-                                                Identifying and mitigating risks associated with global
-                                                logistics, such as geopolitical issues, natural
-                                                disasters, and supply chain disruptions. Knowledge of
-                                                various shipping methods,including air, sea, and land
-                                                transport. Familiarity with freight forwarding, customs
-                                                regulations, and documentation required for
-                                                international shipments.
+                                                "Professional team with deep knowledge of international shipping 
+                                                regulations. They've consistently delivered our automotive parts 
+                                                on time without any damage. Great communication throughout."
                                             </p>
                                             <div className="user d-flex align-items-center">
                                                 <div className="image">
                                                     <img
                                                         src="assets/images/testimonial/testimonial1.jpg"
-                                                        alt="testimonial-image"
+                                                        alt="Muhammad Hassan"
                                                     />
                                                 </div>
                                                 <div className="content">
-                                                    <h3>Cary Marathi</h3>
-                                                    <p>Designer</p>
+                                                    <h3>Muhammad Hassan</h3>
+                                                    <p>Logistics Director, Automotive Parts Ltd</p>
                                                 </div>
                                             </div>
                                             <div className="quote-icon">

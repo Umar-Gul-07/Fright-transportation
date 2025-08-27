@@ -116,14 +116,13 @@ const Home = () => {
                 <div className="banner-content">
                   <div className="title">
                     <span className="sub-title position-relative d-block">
-                      InsoTrans Logistic &amp; Transport
+                      Jabbi International - Freight Transportation
                     </span>
-                    <h1>Global Logistics Expertise.</h1>
+                    <h1>Your Trusted Partner in Global Logistics</h1>
                     <p>
-                      Transportation is a vital aspect of modern life, shaping the way
-                      people and goods move from one place to another. Whether by
-                      road, rail, air, or sea, the efficiency and reliability of
-                      transport systems.
+                      Specializing in import/export services from Karachi Port, we provide comprehensive 
+                      freight transportation solutions worldwide. With years of experience and a dedicated 
+                      team, we ensure your cargo reaches its destination safely and on time.
                     </p>
                   </div>
                   <ul className="list-unstyled ps-0 mb-0 banner-button">
@@ -427,9 +426,9 @@ const Home = () => {
                       <div className="image position-relative z-1">
                         <img src="assets/images/about/about2.jpg" alt="about-image" />
                         <a
-                          href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                          href="https://www.youtube.com/watch?v=9No-FiEInLA"
                           className="play-btn popup-youtube"
-                          target="_blank" rel="noreferrer"
+                          target="_blank" 
                           rel="noreferrer"
                         >
                           <i className="ph-fill ph-play" />
@@ -680,14 +679,14 @@ const Home = () => {
                 <div className="col-lg-6 col-sm-6">
                   <div className="section-title">
                     <span className="sub-title d-block position-relative">
-                      Our Latest Portfolio
+                      Our Core Services
                     </span>
-                    <h2>Recent Projects</h2>
+                    <h2>Freight Transportation Solutions</h2>
                   </div>
                 </div>
                 <div className="col-lg-6 col-sm-6">
-                  <Link className="default-btn style-1" to="/portfolio">
-                    View All Projects
+                  <Link className="default-btn style-1" to="/services">
+                    View All Services
                     <i className="ph-bold ph-arrow-right" />
                   </Link>
                 </div>
@@ -712,12 +711,12 @@ const Home = () => {
                     <div className="show-content">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
-                          <h3>Air freight solution</h3>
+                          <p>Air Freight Services</p>
+                          <h3>Express Air Cargo</h3>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
-                            <i className="ph-bold ph-arrow-right" />
+                          <Link to="/services">
+                            <i className="ph-bold ph-airplane" />
                           </Link>
                         </div>
                       </div>
@@ -725,13 +724,16 @@ const Home = () => {
                     <div className="detail active">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
+                          <p>Air Freight Services</p>
                           <h3>
-                            <Link to="/portfolio">Air freight solution</Link>
+                            <Link to="/services">Express Air Cargo</Link>
                           </h3>
+                          <p className="service-description">
+                            Fast and reliable air freight solutions for time-sensitive shipments worldwide.
+                          </p>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
+                          <Link to="/services">
                             <i className="ph-bold ph-arrow-right" />
                           </Link>
                         </div>
@@ -742,12 +744,12 @@ const Home = () => {
                     <div className="show-content">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
-                          <h3>Air freight solution</h3>
+                          <p>Sea Freight Services</p>
+                          <h3>Ocean Cargo Solutions</h3>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
-                            <i className="ph-bold ph-arrow-right" />
+                          <Link to="/services">
+                            <i className="ph-bold ph-ship" />
                           </Link>
                         </div>
                       </div>
@@ -755,13 +757,16 @@ const Home = () => {
                     <div className="detail">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
+                          <p>Sea Freight Services</p>
                           <h3>
-                            <Link to="/portfolio">Air freight solution</Link>
+                            <Link to="/services">Ocean Cargo Solutions</Link>
                           </h3>
+                          <p className="service-description">
+                            Cost-effective sea freight services from Karachi Port to global destinations.
+                          </p>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
+                          <Link to="/services">
                             <i className="ph-bold ph-arrow-right" />
                           </Link>
                         </div>
@@ -772,12 +777,12 @@ const Home = () => {
                     <div className="show-content">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
-                          <h3>Air freight solution</h3>
+                          <p>Customs Clearance</p>
+                          <h3>Import/Export Processing</h3>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
-                            <i className="ph-bold ph-arrow-right" />
+                          <Link to="/services">
+                            <i className="ph-bold ph-file-text" />
                           </Link>
                         </div>
                       </div>
@@ -785,13 +790,16 @@ const Home = () => {
                     <div className="detail">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
+                          <p>Customs Clearance</p>
                           <h3>
-                            <Link to="/portfolio">Air freight solution</Link>
+                            <Link to="/services">Import/Export Processing</Link>
                           </h3>
+                          <p className="service-description">
+                            Expert customs clearance and documentation services for smooth trade operations.
+                          </p>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
+                          <Link to="/services">
                             <i className="ph-bold ph-arrow-right" />
                           </Link>
                         </div>
@@ -802,12 +810,12 @@ const Home = () => {
                     <div className="show-content">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
-                          <h3>Air freight solution</h3>
+                          <p>Port Operations</p>
+                          <h3>Karachi Port Services</h3>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
-                            <i className="ph-bold ph-arrow-right" />
+                          <Link to="/services">
+                            <i className="ph-bold ph-anchor" />
                           </Link>
                         </div>
                       </div>
@@ -815,13 +823,16 @@ const Home = () => {
                     <div className="detail">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
+                          <p>Port Operations</p>
                           <h3>
-                            <Link to="/portfolio">Air freight solution</Link>
+                            <Link to="/services">Karachi Port Services</Link>
                           </h3>
+                          <p className="service-description">
+                            Specialized port operations and handling services at Karachi Port facilities.
+                          </p>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
+                          <Link to="/services">
                             <i className="ph-bold ph-arrow-right" />
                           </Link>
                         </div>
@@ -832,12 +843,12 @@ const Home = () => {
                     <div className="show-content">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
-                          <h3>Air freight solution</h3>
+                          <p>Freight Forwarding</p>
+                          <h3>End-to-End Logistics</h3>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
-                            <i className="ph-bold ph-arrow-right" />
+                          <Link to="/services">
+                            <i className="ph-bold ph-truck" />
                           </Link>
                         </div>
                       </div>
@@ -845,13 +856,16 @@ const Home = () => {
                     <div className="detail">
                       <div className="content d-flex align-items-center justify-content-between">
                         <div className="text">
-                          <p>Transport Logistic</p>
+                          <p>Freight Forwarding</p>
                           <h3>
-                            <Link to="/portfolio">Air freight solution</Link>
+                            <Link to="/services">End-to-End Logistics</Link>
                           </h3>
+                          <p className="service-description">
+                            Complete freight forwarding solutions from pickup to final delivery.
+                          </p>
                         </div>
                         <div className="icon">
-                          <Link to="/portfolio">
+                          <Link to="/services">
                             <i className="ph-bold ph-arrow-right" />
                           </Link>
                         </div>
@@ -1531,9 +1545,6 @@ const Home = () => {
         </div>
       </div>
 
-
-
-
       <div className="faq-area ptb-100">
         <div className="container">
           <div className="main-max-width mx-auto">
@@ -1552,8 +1563,8 @@ const Home = () => {
             >
               <div className="faq-content">
                 <div className="section-title">
-                  <span className="d-block sub-title position-relative">Faq</span>
-                  <h2>Get Every Able Answer</h2>
+                  <span className="d-block sub-title position-relative">FAQ</span>
+                  <h2>Frequently Asked Questions</h2>
                 </div>
                 <div className="faq-accordion accordion" id="faqAccordion">
                   <div
@@ -1577,7 +1588,7 @@ const Home = () => {
                       aria-expanded="false"
                       aria-controls="accordionCollapseTwo"
                     >
-                      What are the main modes of transportation?
+                      What services does Jabbi International provide?
                     </button>
                     <div
                       id="accordionCollapseTwo"
@@ -1586,9 +1597,9 @@ const Home = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          Technology has revolutionized transportation with
-                          innovations like GPS navigation, real-time tracking,
-                          autonomous vehicles,
+                          We provide comprehensive freight transportation services including sea freight, 
+                          air freight, customs clearance, warehousing, door-to-door delivery, and 
+                          project cargo handling from Karachi Port to worldwide destinations.
                         </p>
                       </div>
                     </div>
@@ -1614,7 +1625,7 @@ const Home = () => {
                       aria-expanded="true"
                       aria-controls="accordionCollapseOne"
                     >
-                      How does technology impact transportation?
+                      How long does shipping take from Karachi Port?
                     </button>
                     <div
                       id="accordionCollapseOne"
@@ -1623,9 +1634,9 @@ const Home = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          Technology has revolutionized transportation with
-                          innovations like GPS navigation, real-time tracking,
-                          autonomous vehicles,
+                          Shipping times vary depending on destination and service type. Sea freight 
+                          typically takes 15-45 days, while air freight takes 3-7 days. We provide 
+                          real-time tracking for all shipments.
                         </p>
                       </div>
                     </div>
@@ -1651,7 +1662,7 @@ const Home = () => {
                       aria-expanded="false"
                       aria-controls="accordionCollapseThree"
                     >
-                      How do logistics and transportation intersect?
+                      Do you handle customs clearance?
                     </button>
                     <div
                       id="accordionCollapseThree"
@@ -1660,9 +1671,9 @@ const Home = () => {
                     >
                       <div className="accordion-body">
                         <p>
-                          Technology has revolutionized transportation with
-                          innovations like GPS navigation, real-time tracking,
-                          autonomous vehicles,
+                          Yes, we provide complete customs clearance services including documentation, 
+                          duty calculation, and compliance with all import/export regulations to ensure 
+                          smooth clearance of your cargo.
                         </p>
                       </div>
                     </div>
@@ -1673,8 +1684,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
 
       <div className="blog-area pt-100 pb-75">
         <div className="container">
@@ -1696,16 +1705,16 @@ const Home = () => {
                 <div className="col-lg-8 col-sm-8">
                   <div className="section-title">
                     <span className="d-block sub-title position-relative">
-                      Our Blog
+                      Latest News
                     </span>
-                    <h2>Latest News &amp; Articles</h2>
+                    <h2>Industry Updates & Insights</h2>
                   </div>
                 </div>
                 <div className="col-lg-4 col-sm-4">
-                  <a className="default-btn style-1" href="blog.html">
-                    See All
+                  <Link className="default-btn style-1" to="/blog">
+                    View All News
                     <i className="ph-bold ph-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1729,16 +1738,16 @@ const Home = () => {
               >
                 <div className="single-blog-card">
                   <div className="image">
-                    <a href="blog.html" className="d-block">
+                    <Link to="/blog" className="d-block">
                       <img src="assets/images/blog/blog1.jpg" alt="blog-image" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="content d-flex justify-content-between">
                     <div className="text position-relative">
                       <ul className="list-unstyled ps-0">
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-user-circle" />
-                          <a href="author.html">Admin</a>
+                          <Link to="/blog">Admin</Link>
                         </li>
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-chat-teardrop-dots" />
@@ -1746,11 +1755,11 @@ const Home = () => {
                         </li>
                       </ul>
                       <h3>
-                        <a href="blog.html">
-                          Express delivery is going to slow down in 2023
-                        </a>
+                        <Link to="/blog">
+                          New Shipping Routes from Karachi Port
+                        </Link>
                       </h3>
-                      <p>The surge in e-commerce and online shopping has led.</p>
+                      <p>Expanding our global reach with new direct routes to major markets.</p>
                     </div>
                     <div className="date">
                       <h3>25</h3>
@@ -1774,16 +1783,16 @@ const Home = () => {
               >
                 <div className="single-blog-card">
                   <div className="image">
-                    <a href="blog.html">
+                    <Link to="/blog">
                       <img src="assets/images/blog/blog2.jpg" alt="blog-image" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="content d-flex justify-content-between">
                     <div className="text position-relative">
                       <ul className="list-unstyled ps-0">
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-user-circle" />
-                          <a href="author.html">Admin</a>
+                          <Link to="/blog">Admin</Link>
                         </li>
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-chat-teardrop-dots" />
@@ -1791,11 +1800,11 @@ const Home = () => {
                         </li>
                       </ul>
                       <h3>
-                        <a href="blog.html">
-                          Express delivery is going to slow down in 2023
-                        </a>
+                        <Link to="/blog">
+                          Customs Regulations Update 2024
+                        </Link>
                       </h3>
-                      <p>The surge in e-commerce and online shopping has led.</p>
+                      <p>Latest updates on import/export regulations and compliance requirements.</p>
                     </div>
                     <div className="date">
                       <h3>26</h3>
@@ -1819,16 +1828,16 @@ const Home = () => {
               >
                 <div className="single-blog-card">
                   <div className="image">
-                    <a href="blog.html">
+                    <Link to="/blog">
                       <img src="assets/images/blog/blog3.jpg" alt="blog-image" />
-                    </a>
+                    </Link>
                   </div>
                   <div className="content d-flex justify-content-between">
                     <div className="text position-relative">
                       <ul className="list-unstyled ps-0">
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-user-circle" />
-                          <a href="author.html">Admin</a>
+                          <Link to="/blog">Admin</Link>
                         </li>
                         <li className="d-inline-block position-relative">
                           <i className="ph ph-chat-teardrop-dots" />
@@ -1836,11 +1845,11 @@ const Home = () => {
                         </li>
                       </ul>
                       <h3>
-                        <a href="blog.html">
-                          Express delivery is going to slow down in 2023
-                        </a>
+                        <Link to="/blog">
+                          Sustainable Logistics Solutions
+                        </Link>
                       </h3>
-                      <p>The surge in e-commerce and online shopping has led.</p>
+                      <p>Implementing eco-friendly practices in our freight operations.</p>
                     </div>
                     <div className="date">
                       <h3>28</h3>
@@ -1853,7 +1862,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
 
       <div className="partner-area pb-100">
         <div className="container">
@@ -1872,9 +1880,9 @@ const Home = () => {
               }}
             >
               <span className="d-inline-block sub-title position-relative">
-                Happy Client
+                Trusted Partners
               </span>
-              <h2>Trusted By Our 250.000 Clients</h2>
+              <h2>Our Global Network</h2>
             </div>
             <div className="row gx-0" data-cues="fadeIn" data-disabled="true">
               <div
@@ -1985,12 +1993,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
- 
-
-
-
-
     </>
   )
 }

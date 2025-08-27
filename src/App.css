@@ -1,3 +1,744 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Service Options Styling */
+.service-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.service-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.service-option:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.service-option input[type="radio"] {
+    margin: 0;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Business Hours and Emergency Contact Cards */
+.business-hours-card,
+.emergency-contact-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.hours-list .d-flex {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-list .d-flex:last-child {
+    border-bottom: none;
+}
+
+.emergency-info .d-flex {
+    padding: 8px 0;
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-tooltip {
+        display: none;
+    }
+    
+    .service-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .banner-form {
+        margin-top: 30px;
+    }
+}
+
+/* Form Improvements */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Button Improvements */
+.default-btn {
+    transition: all 0.3s ease;
+}
+
+.default-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Improvements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Success/Error Messages */
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Map Placeholder Improvements */
+.map-placeholder {
+    transition: transform 0.3s ease;
+}
+
+.map-placeholder:hover {
+    transform: scale(1.02);
+}
+
+/* Team Member Cards */
+.single-team-info {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-team-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Cards */
+.single-services-info {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-services-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonial Cards */
+.single-testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.single-testimonial-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Portfolio Boxes */
+.box {
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Pricing Cards */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog Cards */
+.single-blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Partner Logos */
+.single-partner-info {
+    transition: transform 0.3s ease;
+}
+
+.single-partner-info:hover {
+    transform: scale(1.1);
+}
+
+/* Custom Logo Styles */
+.custom-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 28px;
+  color: #2c3e50;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-subtext {
+  font-size: 14px;
+  color: #3498db;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -2px;
+}
+
+.custom-logo-white {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.logo-text-white {
+  font-size: 28px;
+  color: #ffffff;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-subtext-white {
+  font-size: 14px;
+  color: #3498db;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -2px;
+}
+
+/* Professional Jabbi International Logo Styles */
+
+/* Main Logo (Header) */
+.jabbi-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  padding: 5px 0;
+}
+
+.logo-main {
+  font-size: 32px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.logo-sub {
+  font-size: 12px;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* White Logo (Footer) */
+.jabbi-logo-white {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  padding: 5px 0;
+}
+
+.logo-main-white {
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.logo-sub-white {
+  font-size: 12px;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* Responsive Logo Sizes */
+@media (max-width: 768px) {
+  .logo-main, .logo-main-white {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+  }
+  
+  .logo-sub, .logo-sub-white {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-main, .logo-main-white {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .logo-sub, .logo-sub-white {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Hover Effects */
+.jabbi-logo:hover .logo-main {
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.jabbi-logo-white:hover .logo-main-white {
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+/* Logo Animation */
+.jabbi-logo, .jabbi-logo-white {
+  transition: transform 0.3s ease;
+}
+
+.jabbi-logo:hover, .jabbi-logo-white:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced Portfolio Section Styles */
+
+.portfolio-area .box {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.portfolio-area .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.portfolio-area .box .show-content {
+  padding: 30px 25px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.portfolio-area .box .show-content .text h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .box .show-content .text p {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portfolio-area .box .show-content .icon {
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .box:hover .show-content .icon {
+  transform: scale(1.2);
+}
+
+.portfolio-area .box .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 62, 80, 0.95);
+  color: white;
+  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+.portfolio-area .box:hover .detail {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-area .box .detail .text h3 a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .box .detail .text h3 a:hover {
+  color: #3498db;
+}
+
+.portfolio-area .box .detail .text p {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portfolio-area .box .detail .text .service-description {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 10px;
+  color: rgba(255,255,255,0.8);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.portfolio-area .box .detail .icon {
+  font-size: 24px;
+  color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .box:hover .detail .icon {
+  transform: scale(1.2);
+}
+
+/* Service-specific background colors */
+.portfolio-area .box.bg-1 .show-content {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.portfolio-area .box.bg-2 .show-content {
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.portfolio-area .box.bg-3 .show-content {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.portfolio-area .box.bg-4 .show-content {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio-area .box {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-area .box .show-content,
+  .portfolio-area .box .detail {
+    padding: 20px 15px;
+  }
+  
+  .portfolio-area .box .show-content .text h3,
+  .portfolio-area .box .detail .text h3 {
+    font-size: 18px;
+  }
+}
+
+/* Animation enhancements */
+.portfolio-area .box {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Service icons styling */
+.portfolio-area .box .icon i {
+  transition: all 0.3s ease;
+}
+
+.portfolio-area .box:hover .icon i {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Contact Form Enhancements */
+
+/* Form buttons styling */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.default-btn.style-2 {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.default-btn.style-2:hover {
+  background: linear-gradient(135deg, #229954, #1e8449);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+/* Loading spinner */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Notification system */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  max-width: 400px;
+  animation: slideInRight 0.3s ease;
+}
+
+.notification.success {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(39, 174, 96, 0.3);
+}
+
+.notification.error {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(231, 76, 60, 0.3);
+}
+
+.notification-content {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification-message {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.notification-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Form validation styling */
+.form-control:invalid {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25);
+}
+
+.form-control:valid {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 0.2rem rgba(39, 174, 96, 0.25);
+}
+
+/* Responsive form buttons */
+@media (max-width: 768px) {
+  .form-buttons {
+    flex-direction: column;
+  }
+  
+  .form-buttons .default-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

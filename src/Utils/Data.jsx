@@ -3,7 +3,6 @@ const ContactInfo = {
     contact_email_yahoo: "jabbiinternational@yahoo.com",
     contact_email: "jabbiinternational@yahoo.com",
     whatsapp: "+92 307 5061710",
-
     address: "2-F, P.E.C.H.S Block-6, Near Delhi Sweets, Shahrah e Faisal, Karachi",
     googleMapsUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.1234567890123!2d67.0615054!3d24.8597325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9c7ac77bb7%3A0x825356c82a1f6a16!2sDelhi%20Sweets!5e0!3m2!1sen!2spk!4v1234567890123",
     googleMapsFallback: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.1234567890123!2d67.0615054!3d24.8597325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9c7ac77bb7%3A0x825356c82a1f6a16!2sDelhi%20Sweets!5e0!3m2!1sen!2spk!4v1234567890123",
@@ -52,7 +51,7 @@ const SocialMediaLinks = ({ className = "list-unstyled ps-0 mb-0 social-link" })
 // WhatsApp Floating Button Component
 const WhatsAppButton = () => {
     const handleWhatsAppClick = () => {
-        const message = "Hello! I'm interested in your services.";
+        const message = "Hello! I'm interested in your freight transportation services.";
         const whatsappUrl = `https://wa.me/${ContactInfo.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
@@ -105,18 +104,106 @@ const WhatsAppButton = () => {
     );
 };
 
+// Updated team members for freight transportation company
 const teamMembers = [
-    {id:1, name: "Alice Smith", title: "Project Manager" },
-    {id:2, name: "Bob Johnson", title: "Software Engineer" },
-    {id:3, name: "Catherine Lee", title: "UX Designer" },
-    {id:4, name: "David Brown", title: "Data Analyst" },
-    {id:5, name: "Emily Davis", title: "Marketing Specialist" },
-    {id:6, name: "Frank Wilson", title: "Quality Assurance" },
-    {id:7, name: "Grace Taylor", title: "Content Strategist" },
-    {id:8, name: "Henry Moore", title: "DevOps Engineer" },
-   
+    {id:1, name: "Ahmed Jabbi", title: "CEO & Founder" },
+    {id:2, name: "Muhammad Ali", title: "Operations Manager" },
+    {id:3, name: "Fatima Khan", title: "Customer Relations" },
+    {id:4, name: "Hassan Raza", title: "Logistics Coordinator" },
+    {id:5, name: "Ayesha Malik", title: "Documentation Specialist" },
+    {id:6, name: "Usman Ahmed", title: "Port Operations" },
+    {id:7, name: "Sana Zahra", title: "Import/Export Manager" },
+    {id:8, name: "Bilal Hassan", title: "Fleet Manager" },
+];
+
+// Freight transportation services data
+const freightServices = [
+    {
+        id: 1,
+        title: "Sea Freight Services",
+        description: "Comprehensive ocean freight solutions from Karachi Port to worldwide destinations",
+        icon: "ph-bold ph-ship",
+        image: "assets/images/services/services1.jpg"
+    },
+    {
+        id: 2,
+        title: "Air Freight Services",
+        description: "Express air freight for time-sensitive shipments with global reach",
+        icon: "ph-bold ph-airplane",
+        image: "assets/images/services/services2.jpg"
+    },
+    {
+        id: 3,
+        title: "Customs Clearance",
+        description: "Expert customs documentation and clearance services for smooth operations",
+        icon: "ph-bold ph-file-text",
+        image: "assets/images/services/services3.jpg"
+    },
+    {
+        id: 4,
+        title: "Warehousing & Storage",
+        description: "Secure warehousing facilities with temperature-controlled options",
+        icon: "ph-bold ph-warehouse",
+        image: "assets/images/services/services4.jpg"
+    },
+    {
+        id: 5,
+        title: "Door-to-Door Delivery",
+        description: "Complete logistics solutions from origin to final destination",
+        icon: "ph-bold ph-truck",
+        image: "assets/images/services/services1.jpg"
+    },
+    {
+        id: 6,
+        title: "Project Cargo",
+        description: "Specialized handling for oversized and heavy equipment shipments",
+        icon: "ph-bold ph-gear",
+        image: "assets/images/services/services2.jpg"
+    },
+    {
+        id: 7,
+        title: "Container Services",
+        description: "FCL and LCL container services with flexible scheduling",
+        icon: "ph-bold ph-container",
+        image: "assets/images/services/services3.jpg"
+    },
+    {
+        id: 8,
+        title: "Supply Chain Solutions",
+        description: "End-to-end supply chain management and optimization",
+        icon: "ph-bold ph-flow-arrow",
+        image: "assets/images/services/services4.jpg"
+    }
+];
+
+// Testimonials for freight transportation
+const testimonials = [
+    {
+        id: 1,
+        name: "Abdul Rahman",
+        position: "Import Manager",
+        company: "Textile Industries Ltd",
+        rating: 5,
+        text: "Jabbi International has been our trusted partner for over 5 years. Their expertise in customs clearance and timely delivery has helped us maintain our supply chain efficiently."
+    },
+    {
+        id: 2,
+        name: "Sarah Ahmed",
+        position: "Export Coordinator",
+        company: "Electronics Corp",
+        rating: 5,
+        text: "Excellent service! They handle our electronics exports with utmost care and provide real-time tracking. Highly recommended for anyone looking for reliable freight services."
+    },
+    {
+        id: 3,
+        name: "Muhammad Hassan",
+        position: "Logistics Director",
+        company: "Automotive Parts Ltd",
+        rating: 5,
+        text: "Professional team with deep knowledge of international shipping regulations. They've consistently delivered our automotive parts on time without any damage."
+    }
 ];
 
 const server_ip = 'http://localhost:800'
 
-export { ContactInfo, teamMembers, server_ip, SocialMediaLinks, WhatsAppButton }
+export { ContactInfo, teamMembers, server_ip, SocialMediaLinks, WhatsAppButton, freightServices, testimonials }
