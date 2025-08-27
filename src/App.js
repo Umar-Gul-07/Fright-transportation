@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
+import ScrollToTop from './Utils/ScrollToTop';
 
 // Placeholder components for other pages
 const Portfolio = () => <div className="container mt-5"><h1>Portfolio</h1><p>Portfolio page content will go here.</p></div>;
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
         {/* ToastContainer */}
         <ToastContainers />
+        <ScrollToTop />
 
         {/* Routes */}
         <Routes>

@@ -18,6 +18,15 @@ function Header() {
     setIsMenuOpen(false);
   }, [location.pathname]);
 
+  // Scroll to top function
+  const handleNavClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <div className="navbar-area">
@@ -26,8 +35,11 @@ function Header() {
           <div className="container">
             <div className="nofa-responsive-menu">
               <div className="logo">
-                <Link to="/" className="d-inline-block">
-                  <img src="assets/images/logo.png" alt="logo" />
+                <Link to="/" className="d-inline-block" onClick={handleNavClick}>
+                  <div className="jabbi-logo">
+                    <div className="logo-main">Jabbi</div>
+                    <div className="logo-sub">International</div>
+                  </div>
                 </Link>
               </div>
               <div className={`navbar-toggler ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
@@ -42,30 +54,49 @@ function Header() {
           <div className="container">
             <div className="main-max-width mx-auto">
               <nav className="navbar navbar-expand-lg navbar-light position-relative z-1">
-                <Link className="navbar-brand" to="/">
-                  <img src="assets/images/logo.png" alt="logo" />
+                <Link className="navbar-brand" to="/" onClick={handleNavClick}>
+                  <div className="jabbi-logo">
+                    <div className="logo-main">Jabbi</div>
+                    <div className="logo-sub">International</div>
+                  </div>
                 </Link>
                 
                 {/* Desktop Menu Container */}
                 <div className="navbar-collapse">
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <Link to="/" className={`nav-link ${isActive('/')}`}>
+                      <Link 
+                        to="/" 
+                        className={`nav-link ${isActive('/')}`}
+                        onClick={handleNavClick}
+                      >
                         Home
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/about" className={`nav-link ${isActive('/about')}`}>
+                      <Link 
+                        to="/about" 
+                        className={`nav-link ${isActive('/about')}`}
+                        onClick={handleNavClick}
+                      >
                         About Us
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/services" className={`nav-link ${isActive('/services')}`}>
+                      <Link 
+                        to="/services" 
+                        className={`nav-link ${isActive('/services')}`}
+                        onClick={handleNavClick}
+                      >
                         Services
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="/contact" className={`nav-link ${isActive('/contact')}`}>
+                      <Link 
+                        to="/contact" 
+                        className={`nav-link ${isActive('/contact')}`}
+                        onClick={handleNavClick}
+                      >
                         Contact
                       </Link>
                     </li>
@@ -80,7 +111,7 @@ function Header() {
                         <input
                           type="text"
                           className="form-control"
-                          placeholder="Search"
+                          placeholder="Search services..."
                         />
                         <button type="submit" className="border-0 bg-transparent p-0">
                           <i className="ph ph-magnifying-glass" />
@@ -89,8 +120,12 @@ function Header() {
                     </form>
                   </div>
                   <div className="option-item">
-                    <Link className="default-btn" to="/contact">
-                      Track Parcel
+                    <Link 
+                      className="default-btn" 
+                      to="/contact"
+                      onClick={handleNavClick}
+                    >
+                      Get Quote
                     </Link>
                   </div>
                 </div>
