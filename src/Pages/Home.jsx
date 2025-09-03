@@ -554,19 +554,21 @@ const Home = () => {
                       animationFillMode: "both"
                     }}
                   >
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#accordionCollapseTwo"
-                      aria-expanded="false"
-                      aria-controls="accordionCollapseTwo"
-                    >
-                      What services does Jabbi International provide?
-                    </button>
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseOne"
+                        aria-expanded="true"
+                        aria-controls="faqCollapseOne"
+                      >
+                        What services does Jabbi International provide?
+                      </button>
+                    </h2>
                     <div
-                      id="accordionCollapseTwo"
-                      className="accordion-collapse collapse"
+                      id="faqCollapseOne"
+                      className="accordion-collapse collapse show"
                       data-bs-parent="#faqAccordion"
                     >
                       <div className="accordion-body">
@@ -578,6 +580,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div
                     className="accordion-item"
                     data-cue="slideInUp"
@@ -591,19 +594,21 @@ const Home = () => {
                       animationFillMode: "both"
                     }}
                   >
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#accordionCollapseOne"
-                      aria-expanded="true"
-                      aria-controls="accordionCollapseOne"
-                    >
-                      How long does shipping take from Karachi Port?
-                    </button>
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseTwo"
+                        aria-expanded="false"
+                        aria-controls="faqCollapseTwo"
+                      >
+                        How long does shipping take from Karachi Port?
+                      </button>
+                    </h2>
                     <div
-                      id="accordionCollapseOne"
-                      className="accordion-collapse collapse show"
+                      id="faqCollapseTwo"
+                      className="accordion-collapse collapse"
                       data-bs-parent="#faqAccordion"
                     >
                       <div className="accordion-body">
@@ -615,6 +620,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div
                     className="accordion-item"
                     data-cue="slideInUp"
@@ -628,18 +634,20 @@ const Home = () => {
                       animationFillMode: "both"
                     }}
                   >
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#accordionCollapseThree"
-                      aria-expanded="false"
-                      aria-controls="accordionCollapseThree"
-                    >
-                      Do you handle customs clearance?
-                    </button>
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseThree"
+                        aria-expanded="false"
+                        aria-controls="faqCollapseThree"
+                      >
+                        Do you handle customs clearance?
+                      </button>
+                    </h2>
                     <div
-                      id="accordionCollapseThree"
+                      id="faqCollapseThree"
                       className="accordion-collapse collapse"
                       data-bs-parent="#faqAccordion"
                     >
@@ -648,6 +656,45 @@ const Home = () => {
                           Yes, we provide complete customs clearance services including documentation, 
                           duty calculation, and compliance with all import/export regulations to ensure 
                           smooth clearance of your cargo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div
+                    className="accordion-item"
+                    data-cue="slideInUp"
+                    data-show="true"
+                    style={{
+                      animationName: "slideInUp",
+                      animationDuration: "600ms",
+                      animationTimingFunction: "ease",
+                      animationDelay: "0ms",
+                      animationDirection: "normal",
+                      animationFillMode: "both"
+                    }}
+                  >
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqCollapseFour"
+                        aria-expanded="false"
+                        aria-controls="faqCollapseFour"
+                      >
+                        What are your operating hours?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqCollapseFour"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div className="accordion-body">
+                        <p>
+                          We operate Monday to Friday from 8:00 AM to 6:00 PM, and Saturday from 9:00 AM to 4:00 PM. 
+                          For urgent shipments, we provide 24/7 emergency support.
                         </p>
                       </div>
                     </div>
