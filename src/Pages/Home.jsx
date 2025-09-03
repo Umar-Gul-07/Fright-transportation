@@ -112,17 +112,15 @@ const Home = () => {
                 animationFillMode: "both"
               }}
             >
-              <div className="col-lg-6">
-                <div className="banner-content">
+              <div className="col-lg-12">
+                <div className="banner-content text-center">
                   <div className="title">
                     <span className="sub-title position-relative d-block">
-                      Jabbi International - Freight Transportation
+                      Jabbi International
                     </span>
-                    <h1>Your Trusted Partner in Global Logistics</h1>
+                    <h1>Your Trusted Partner in Customs Clearance & Freight Forwarding</h1>
                     <p>
-                      Specializing in import/export services from Karachi Port, we provide comprehensive 
-                      freight transportation solutions worldwide. With years of experience and a dedicated 
-                      team, we ensure your cargo reaches its destination safely and on time.
+                      Fast, reliable, and hassle-free solutions for your import and export needs.
                     </p>
                   </div>
                   <ul className="list-unstyled ps-0 mb-0 banner-button">
@@ -139,82 +137,6 @@ const Home = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="banner-form">
-                  <div className="title">
-                    <h3>Get a Quick Quote</h3>
-                    <p>For Detailed quote use extended version</p>
-                  </div>
-                  <form>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <div className="form-group">
-                          <label className="form-label">From</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Select Destination..."
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="form-group">
-                          <label className="form-label">To</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Select Destination..."
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="form-group">
-                          <label className="form-label">Truckload</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Select..."
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="form-group">
-                          <label className="form-label">Commodity</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Select..."
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div className="filter-info position-relative">
-                    <h6>Dist. (Miles)</h6>
-                    <div className="range-slider">
-                      <input
-                        className="range-slider-range"
-                        type="range"
-                        defaultValue="$250"
-                        min={0}
-                        max={500}
-                      />
-                      <span className="range-slider-value">$250</span>
-                    </div>
-                  </div>
-                  <div className="refrigerated d-flex align-items-center">
-                    <h3>Refrigerated</h3>
-                    <input type="checkbox" id="switch" />
-                    <label htmlFor="switch">Toggle</label>
-                  </div>
-                  <button
-                    type="submit"
-                    className="submit-button border-0 box-shadow-0"
-                  >
-                    Submit
-                  </button>
                 </div>
               </div>
             </div>
@@ -440,21 +362,21 @@ const Home = () => {
                       <div className="content">
                         <div className="content-info">
                           <h2>
-                            <span className="counter">50</span>+
+                            <span className="counter">20</span>+
                           </h2>
-                          <p>International Airports</p>
+                          <p>Years of Experience</p>
                         </div>
                         <div className="content-info">
                           <h2>
-                            <span className="counter">750</span>+
+                            <span className="counter">100</span>+
                           </h2>
-                          <p>Branches The World</p>
+                          <p>Clients Served</p>
                         </div>
                         <div className="content-info">
                           <h2>
-                            <span className="counter">96</span>K+
+                            <span className="counter">5500</span>+
                           </h2>
-                          <p>Deliveries Per Day</p>
+                          <p>Shipments Completed</p>
                         </div>
                       </div>
                     </div>
@@ -486,19 +408,16 @@ const Home = () => {
                   animationFillMode: "both"
                 }}
               >
-                <div className="col-lg-8 col-sm-8">
-                  <div className="section-title">
+                <div className="col-lg-12 col-sm-12">
+                  <div className="section-title text-center">
                     <span className="d-block sub-title position-relative">
-                      Services
+                      Our Services
                     </span>
-                    <h2>Provide us with reliable Service</h2>
+                    <h2>Complete Range of Logistics & Trade Facilitation Services</h2>
+                    <p className="mt-3">
+                      At Jabbi International, we provide a complete range of logistics and trade facilitation services designed to make your import and export operations smooth and stress-free.
+                    </p>
                   </div>
-                </div>
-                <div className="col-lg-4 col-sm-4">
-                  <a className="default-btn style-1" href="services.html">
-                    See All
-                    <i className="ph-bold ph-arrow-right" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -524,19 +443,20 @@ const Home = () => {
                   <div className="image">
                     <img
                       src="assets/images/services/services1.jpg"
-                      alt="services-image"
+                      alt="Customs Clearance"
                     />
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="services-details.html">Real-Time Tracking</a>
+                      <a href="/services">Customs Clearance</a>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="services-details.html">Real-Time Tracking</a>
+                      <a href="/services">Customs Clearance</a>
                     </h3>
-                    <a href="services-details.html" className="read-more">
+                    <p>Fast and efficient clearance for imports and exports, ensuring compliance with all regulations and minimizing delays at ports and borders.</p>
+                    <a href="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
                     </a>
@@ -560,19 +480,20 @@ const Home = () => {
                   <div className="image">
                     <img
                       src="assets/images/services/services2.jpg"
-                      alt="services-image"
+                      alt="Freight Consultancy"
                     />
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="services-details.html">Real-Time Tracking</a>
+                      <a href="/services">Freight Consultancy</a>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="services-details.html">Real-Time Tracking</a>
+                      <a href="/services">Freight Consultancy</a>
                     </h3>
-                    <a href="services-details.html" className="read-more">
+                    <p>Expert advice on the most cost-effective and time-efficient transport modes, routes, and strategies for your shipments.</p>
+                    <a href="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
                     </a>
@@ -596,19 +517,20 @@ const Home = () => {
                   <div className="image">
                     <img
                       src="assets/images/services/services3.jpg"
-                      alt="services-image"
+                      alt="Documentation Assistance"
                     />
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="services-details.html">Security for Cargo</a>
+                      <a href="/services">Documentation Assistance</a>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="services-details.html">Security for Cargo</a>
+                      <a href="/services">Documentation Assistance</a>
                     </h3>
-                    <a href="services-details.html" className="read-more">
+                    <p>Complete support for all shipping and trade documents, including bills of lading, commercial invoices, packing lists, and customs forms.</p>
+                    <a href="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
                     </a>
@@ -632,19 +554,20 @@ const Home = () => {
                   <div className="image">
                     <img
                       src="assets/images/services/services4.jpg"
-                      alt="services-image"
+                      alt="In-Country Transport"
                     />
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="services-details.html">End To End Solutions</a>
+                      <a href="/services">In-Country Transport</a>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="services-details.html">End To End Solutions</a>
+                      <a href="/services">In-Country Transport</a>
                     </h3>
-                    <a href="services-details.html" className="read-more">
+                    <p>Secure and timely domestic transportation from ports to warehouses, factories, or final delivery points.</p>
+                    <a href="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
                     </a>
@@ -659,565 +582,16 @@ const Home = () => {
 
 
 
-      <div className="portfolio-area pb-75">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div className="portfolio-section-title">
-              <div
-                className="row align-items-center"
-                data-cue="slideInUp"
-                data-show="true"
-                style={{
-                  animationName: "slideInUp",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="col-lg-6 col-sm-6">
-                  <div className="section-title">
-                    <span className="sub-title d-block position-relative">
-                      Our Core Services
-                    </span>
-                    <h2>Freight Transportation Solutions</h2>
-                  </div>
-                </div>
-                <div className="col-lg-6 col-sm-6">
-                  <Link className="default-btn style-1" to="/services">
-                    View All Services
-                    <i className="ph-bold ph-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="portfolio-content">
-              <div
-                className="projects-box-info"
-                data-cue="slideInUp"
-                data-show="true"
-                style={{
-                  animationName: "slideInUp",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <ul className="main-box">
-                  <li className="box" style={{ width: "25%" }}>
-                    <div className="show-content">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Air Freight Services</p>
-                          <h3>Express Air Cargo</h3>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-airplane" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="detail active">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Air Freight Services</p>
-                          <h3>
-                            <Link to="/services">Express Air Cargo</Link>
-                          </h3>
-                          <p className="service-description">
-                            Fast and reliable air freight solutions for time-sensitive shipments worldwide.
-                          </p>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-arrow-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="box bg-1 active" style={{ width: "25%" }}>
-                    <div className="show-content">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Sea Freight Services</p>
-                          <h3>Ocean Cargo Solutions</h3>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-ship" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="detail">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Sea Freight Services</p>
-                          <h3>
-                            <Link to="/services">Ocean Cargo Solutions</Link>
-                          </h3>
-                          <p className="service-description">
-                            Cost-effective sea freight services from Karachi Port to global destinations.
-                          </p>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-arrow-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="box bg-2" style={{ width: "25%" }}>
-                    <div className="show-content">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Customs Clearance</p>
-                          <h3>Import/Export Processing</h3>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-file-text" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="detail">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Customs Clearance</p>
-                          <h3>
-                            <Link to="/services">Import/Export Processing</Link>
-                          </h3>
-                          <p className="service-description">
-                            Expert customs clearance and documentation services for smooth trade operations.
-                          </p>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-arrow-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="box bg-3" style={{ width: "25%" }}>
-                    <div className="show-content">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Port Operations</p>
-                          <h3>Karachi Port Services</h3>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-anchor" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="detail">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Port Operations</p>
-                          <h3>
-                            <Link to="/services">Karachi Port Services</Link>
-                          </h3>
-                          <p className="service-description">
-                            Specialized port operations and handling services at Karachi Port facilities.
-                          </p>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-arrow-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="box bg-4" style={{ width: "25%" }}>
-                    <div className="show-content">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Freight Forwarding</p>
-                          <h3>End-to-End Logistics</h3>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-truck" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="detail">
-                      <div className="content d-flex align-items-center justify-content-between">
-                        <div className="text">
-                          <p>Freight Forwarding</p>
-                          <h3>
-                            <Link to="/services">End-to-End Logistics</Link>
-                          </h3>
-                          <p className="service-description">
-                            Complete freight forwarding solutions from pickup to final delivery.
-                          </p>
-                        </div>
-                        <div className="icon">
-                          <Link to="/services">
-                            <i className="ph-bold ph-arrow-right" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
 
-      <div className="pricing-area pb-75">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div
-              className="row"
-              data-cue="slideInUp"
-              data-show="true"
-              style={{
-                animationName: "slideInUp",
-                animationDuration: "600ms",
-                animationTimingFunction: "ease",
-                animationDelay: "0ms",
-                animationDirection: "normal",
-                animationFillMode: "both"
-              }}
-            >
-              <div className="col-lg-4 col-md-12">
-                <div className="pricing-content">
-                  <div className="slideToggle">
-                    <label className="form-switch">
-                      <span className="beforeinput text-success">Monthly</span>
-                      <input type="checkbox" id="js-contcheckbox" />
-                      <i />
-                      <span className="afterinput">Yearly</span>
-                    </label>
-                  </div>
-                  <ul className="list-unstyled ps-0 mb-0 list">
-                    <li className="position-relative d-block">
-                      Express Shipping Solutions
-                      <i className="ph-bold ph-check" />
-                    </li>
-                    <li className="position-relative d-block active">
-                      Strategic Transport Salutation
-                      <i className="ph-bold ph-check" />
-                    </li>
-                    <li className="position-relative d-block">
-                      Efficient Transportation Services
-                      <i className="ph-bold ph-check" />
-                    </li>
-                    <li className="position-relative d-block">
-                      Secure Warehouse Solutions
-                      <i className="ph-bold ph-check" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-8">
-                <div className="pricing-card">
-                  <div className="single-pricing-card d-flex justify-content-between">
-                    <div className="content">
-                      <h3 className="d-flex align-items-center">
-                        Standard Plan
-                        <span>Save 25%</span>
-                      </h3>
-                      <h1 className="js-montlypricing">
-                        20 <sub>/ Per Monthly</sub>
-                      </h1>
-                      <h1 className="js-yearlypricing">
-                        70 <sub>/ Per Yearly</sub>
-                      </h1>
-                    </div>
-                    <div className="list">
-                      <ul className="list-unstyled ps-0 mb-0">
-                        <li className="position-relative">
-                          1 warehouse
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                        <li className="position-relative">
-                          3650 Kg load
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                        <li className="position-relative">
-                          Careful handling of goods
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="pricing-card">
-                  <div className="single-pricing-card d-flex justify-content-between">
-                    <div className="content">
-                      <h3 className="d-flex align-items-center">
-                        Enterprise Plan
-                        <span>Save 30%</span>
-                      </h3>
-                      <h1 className="js-montlypricing">
-                        20 <sub>/ Per Monthly</sub>
-                      </h1>
-                      <h1 className="js-yearlypricing">
-                        60 <sub>/ Per Yearly</sub>
-                      </h1>
-                      <a className="default-btn" href="pricing.html">
-                        Get Start
-                      </a>
-                    </div>
-                    <div className="list">
-                      <ul className="list-unstyled ps-0 mb-0">
-                        <li className="position-relative">
-                          1 warehouse
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                        <li className="position-relative">
-                          3650 Kg load
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                        <li className="position-relative">
-                          Careful handling of goods
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                        <li className="position-relative">
-                          24/7 support
-                          <i className="ph-bold ph-plus" />
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
-      <div className="team-area pb-75">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div className="team-section-title">
-              <div
-                className="row align-items-end"
-                data-cue="slideInUp"
-                data-show="true"
-                style={{
-                  animationName: "slideInUp",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="col-lg-8 col-sm-8">
-                  <div className="section-title">
-                    <span className="d-block sub-title position-relative">
-                      Our Team
-                    </span>
-                    <h2>Meet Your Team Membar</h2>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-4">
-                  <a className="default-btn style-1" href="team.html">
-                    See All
-                    <i className="ph-bold ph-arrow-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row justify-content-center"
-              data-cues="fadeIn"
-              data-disabled="true"
-            >
-              <div
-                className="col-lg-4 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-team-info position-relative z-1">
-                  <div className="image">
-                    <img src="assets/images/team/team1.jpg" alt="team-image" />
-                  </div>
-                  <div className="content d-flex align-items-end justify-content-between">
-                    <div className="text">
-                      <h3>
-                        <a href="team.html">Brooklyn Simmons</a>
-                      </h3>
-                      <p>Designer</p>
-                    </div>
-                    <div className="icon">
-                      <ul className="list-unstyled ps-0 mb-0">
-                        <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-instagram-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-twitter-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-youtube-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-facebook-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="team.html" className="active">
-                            <i className="ph-bold ph-plus" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "180ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-team-info position-relative z-1">
-                  <div className="image">
-                    <img src="assets/images/team/team2.jpg" alt="team-image" />
-                  </div>
-                  <div className="content d-flex align-items-end justify-content-between">
-                    <div className="text">
-                      <h3>
-                        <a href="team.html">Brooklyn Simmons</a>
-                      </h3>
-                      <p>Designer</p>
-                    </div>
-                    <div className="icon">
-                      <ul className="list-unstyled ps-0 mb-0">
-                        <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-instagram-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-twitter-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-youtube-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-facebook-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="team.html" className="active">
-                            <i className="ph-bold ph-plus" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "360ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-team-info position-relative z-1">
-                  <div className="image">
-                    <img src="assets/images/team/team3.jpg" alt="team-image" />
-                  </div>
-                  <div className="content d-flex align-items-end justify-content-between">
-                    <div className="text">
-                      <h3>
-                        <a href="team.html">Brooklyn Simmons</a>
-                      </h3>
-                      <p>Designer</p>
-                    </div>
-                    <div className="icon">
-                      <ul className="list-unstyled ps-0 mb-0">
-                        <li>
-                          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-instagram-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-twitter-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-fill ph-youtube-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                            <i className="ph-bold ph-facebook-logo" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="team.html" className="active">
-                            <i className="ph-bold ph-plus" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+
 
 
 
