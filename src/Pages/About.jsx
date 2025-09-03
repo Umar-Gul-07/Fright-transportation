@@ -158,6 +158,17 @@ function About() {
                                                 <i className="ph-bold ph-arrow-right" />
                                             </Link>
                                         </li>
+                                        <li className="d-inline-block">
+                                            <div className="user-block">
+                                                <div className="user-image">
+                                                    <img src="assets/images/team/team1.jpg" alt="CEO & Founder" />
+                                                </div>
+                                                <div className="user-info">
+                                                    <h4>CEO & Founder</h4>
+                                                    <p>Jabbi International</p>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
