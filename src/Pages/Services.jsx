@@ -47,7 +47,11 @@ function Services() {
                         <div className="services-section-title">
                             <div className="section-title">
                                 <span className="d-block sub-title position-relative">Our Services</span>
-                                <h2>Comprehensive Freight Transportation Solutions</h2>
+                                <h2>Complete Range of Logistics & Trade Facilitation Services</h2>
+                                <p className="mt-3">
+                                    At Jabbi International, we provide a complete range of logistics and trade facilitation 
+                                    services designed to make your import and export operations smooth and stress-free.
+                                </p>
                             </div>
                         </div>
                         <div
@@ -56,7 +60,7 @@ function Services() {
                             data-disabled="true"
                         >
                             <div
-                                className="col-lg-3 col-sm-6"
+                                className="col-lg-6 col-sm-6"
                                 data-cue="fadeIn"
                                 data-show="true"
                                 style={{
@@ -72,80 +76,6 @@ function Services() {
                                     <div className="image">
                                         <img
                                             src="assets/images/services/services1.jpg"
-                                            alt="Sea Freight Services"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <h3>
-                                            <Link to="/services">Sea Freight Services</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="hover-content">
-                                        <h3>
-                                            <Link to="/services">Sea Freight Services</Link>
-                                        </h3>
-                                        <p>Comprehensive ocean freight solutions from Karachi Port to worldwide destinations. FCL and LCL services with competitive rates.</p>
-                                        <Link to="/services" className="read-more">
-                                            Read More
-                                            <i className="ph-bold ph-arrow-right" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-3 col-sm-6"
-                                data-cue="fadeIn"
-                                data-show="true"
-                                style={{
-                                    animationName: "fadeIn",
-                                    animationDuration: "600ms",
-                                    animationTimingFunction: "ease",
-                                    animationDelay: "180ms",
-                                    animationDirection: "normal",
-                                    animationFillMode: "both"
-                                }}
-                            >
-                                <div className="single-services-info services-style position-relative z-1">
-                                    <div className="image">
-                                        <img
-                                            src="assets/images/services/services2.jpg"
-                                            alt="Air Freight Services"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <h3>
-                                            <Link to="/services">Air Freight Services</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="hover-content">
-                                        <h3>
-                                            <Link to="/services">Air Freight Services</Link>
-                                        </h3>
-                                        <p>Express air freight for time-sensitive shipments with global reach. Fast and reliable delivery for urgent cargo.</p>
-                                        <Link to="/services" className="read-more">
-                                            Read More
-                                            <i className="ph-bold ph-arrow-right" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-3 col-sm-6"
-                                data-cue="fadeIn"
-                                data-show="true"
-                                style={{
-                                    animationName: "fadeIn",
-                                    animationDuration: "600ms",
-                                    animationTimingFunction: "ease",
-                                    animationDelay: "360ms",
-                                    animationDirection: "normal",
-                                    animationFillMode: "both"
-                                }}
-                            >
-                                <div className="single-services-info services-style position-relative z-1">
-                                    <div className="image">
-                                        <img
-                                            src="assets/images/services/services3.jpg"
                                             alt="Customs Clearance"
                                         />
                                     </div>
@@ -158,7 +88,7 @@ function Services() {
                                         <h3>
                                             <Link to="/services">Customs Clearance</Link>
                                         </h3>
-                                        <p>Expert customs documentation and clearance services ensuring smooth import/export operations with compliance.</p>
+                                        <p>Fast and efficient clearance for imports and exports, ensuring compliance with all regulations and minimizing delays at ports and borders.</p>
                                         <Link to="/services" className="read-more">
                                             Read More
                                             <i className="ph-bold ph-arrow-right" />
@@ -167,81 +97,7 @@ function Services() {
                                 </div>
                             </div>
                             <div
-                                className="col-lg-3 col-sm-6"
-                                data-cue="fadeIn"
-                                data-show="true"
-                                style={{
-                                    animationName: "fadeIn",
-                                    animationDuration: "600ms",
-                                    animationTimingFunction: "ease",
-                                    animationDelay: "540ms",
-                                    animationDirection: "normal",
-                                    animationFillMode: "both"
-                                }}
-                            >
-                                <div className="single-services-info services-style position-relative z-1">
-                                    <div className="image">
-                                        <img
-                                            src="assets/images/services/services4.jpg"
-                                            alt="Warehousing & Storage"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <h3>
-                                            <Link to="/services">Warehousing & Storage</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="hover-content">
-                                        <h3>
-                                            <Link to="/services">Warehousing & Storage</Link>
-                                        </h3>
-                                        <p>Secure warehousing facilities with temperature-controlled options for various types of cargo storage needs.</p>
-                                        <Link to="/services" className="read-more">
-                                            Read More
-                                            <i className="ph-bold ph-arrow-right" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-3 col-sm-6"
-                                data-cue="fadeIn"
-                                data-show="true"
-                                style={{
-                                    animationName: "fadeIn",
-                                    animationDuration: "600ms",
-                                    animationTimingFunction: "ease",
-                                    animationDelay: "0ms",
-                                    animationDirection: "normal",
-                                    animationFillMode: "both"
-                                }}
-                            >
-                                <div className="single-services-info services-style position-relative z-1">
-                                    <div className="image">
-                                        <img
-                                            src="assets/images/services/services1.jpg"
-                                            alt="Door-to-Door Delivery"
-                                        />
-                                    </div>
-                                    <div className="content">
-                                        <h3>
-                                            <Link to="/services">Door-to-Door Delivery</Link>
-                                        </h3>
-                                    </div>
-                                    <div className="hover-content">
-                                        <h3>
-                                            <Link to="/services">Door-to-Door Delivery</Link>
-                                        </h3>
-                                        <p>Complete logistics solutions from origin to final destination with end-to-end tracking and management.</p>
-                                        <Link to="/services" className="read-more">
-                                            Read More
-                                            <i className="ph-bold ph-arrow-right" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="col-lg-3 col-sm-6"
+                                className="col-lg-6 col-sm-6"
                                 data-cue="fadeIn"
                                 data-show="true"
                                 style={{
@@ -257,19 +113,19 @@ function Services() {
                                     <div className="image">
                                         <img
                                             src="assets/images/services/services2.jpg"
-                                            alt="Project Cargo"
+                                            alt="Freight Consultancy"
                                         />
                                     </div>
                                     <div className="content">
                                         <h3>
-                                            <Link to="/services">Project Cargo</Link>
+                                            <Link to="/services">Freight Consultancy</Link>
                                         </h3>
                                     </div>
                                     <div className="hover-content">
                                         <h3>
-                                            <Link to="/services">Project Cargo</Link>
+                                            <Link to="/services">Freight Consultancy</Link>
                                         </h3>
-                                        <p>Specialized handling for oversized and heavy equipment shipments with custom solutions for complex projects.</p>
+                                        <p>Expert advice on the most cost-effective and time-efficient transport modes, routes, and strategies for your shipments.</p>
                                         <Link to="/services" className="read-more">
                                             Read More
                                             <i className="ph-bold ph-arrow-right" />
@@ -278,7 +134,7 @@ function Services() {
                                 </div>
                             </div>
                             <div
-                                className="col-lg-3 col-sm-6"
+                                className="col-lg-6 col-sm-6"
                                 data-cue="fadeIn"
                                 data-show="true"
                                 style={{
@@ -294,19 +150,19 @@ function Services() {
                                     <div className="image">
                                         <img
                                             src="assets/images/services/services3.jpg"
-                                            alt="Container Services"
+                                            alt="Documentation Assistance"
                                         />
                                     </div>
                                     <div className="content">
                                         <h3>
-                                            <Link to="/services">Container Services</Link>
+                                            <Link to="/services">Documentation Assistance</Link>
                                         </h3>
                                     </div>
                                     <div className="hover-content">
                                         <h3>
-                                            <Link to="/services">Container Services</Link>
+                                            <Link to="/services">Documentation Assistance</Link>
                                         </h3>
-                                        <p>FCL and LCL container services with flexible scheduling and competitive rates for various cargo types.</p>
+                                        <p>Complete support for all shipping and trade documents, including bills of lading, commercial invoices, packing lists, and customs forms.</p>
                                         <Link to="/services" className="read-more">
                                             Read More
                                             <i className="ph-bold ph-arrow-right" />
@@ -315,7 +171,7 @@ function Services() {
                                 </div>
                             </div>
                             <div
-                                className="col-lg-3 col-sm-6"
+                                className="col-lg-6 col-sm-6"
                                 data-cue="fadeIn"
                                 data-show="true"
                                 style={{
@@ -331,19 +187,19 @@ function Services() {
                                     <div className="image">
                                         <img
                                             src="assets/images/services/services4.jpg"
-                                            alt="Supply Chain Solutions"
+                                            alt="In-Country Transport"
                                         />
                                     </div>
                                     <div className="content">
                                         <h3>
-                                            <Link to="/services">Supply Chain Solutions</Link>
+                                            <Link to="/services">In-Country Transport</Link>
                                         </h3>
                                     </div>
                                     <div className="hover-content">
                                         <h3>
-                                            <Link to="/services">Supply Chain Solutions</Link>
+                                            <Link to="/services">In-Country Transport</Link>
                                         </h3>
-                                        <p>End-to-end supply chain management and optimization for efficient logistics operations worldwide.</p>
+                                        <p>Secure and timely domestic transportation from ports to warehouses, factories, or final delivery points.</p>
                                         <Link to="/services" className="read-more">
                                             Read More
                                             <i className="ph-bold ph-arrow-right" />

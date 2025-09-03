@@ -72,19 +72,6 @@ const Home = () => {
       });
     });
 
-    // Portfolio hover effects
-    const portfolioBoxes = document.querySelectorAll('.box');
-    portfolioBoxes.forEach(box => {
-      box.addEventListener('mouseenter', () => {
-        box.classList.add('active');
-        portfolioBoxes.forEach(otherBox => {
-          if (otherBox !== box) {
-            otherBox.classList.remove('active');
-          }
-        });
-      });
-    });
-
     return () => {
       // Cleanup
       counters.forEach(counter => counterObserver.unobserve(counter));
@@ -112,8 +99,8 @@ const Home = () => {
                 animationFillMode: "both"
               }}
             >
-              <div className="col-lg-12">
-                <div className="banner-content text-center">
+              <div className="col-lg-6">
+                <div className="banner-content">
                   <div className="title">
                     <span className="sub-title position-relative d-block">
                       Jabbi International
@@ -139,15 +126,24 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
+              <div className="col-lg-6">
+                <div className="banner-image text-center">
+                  <img 
+                    src="assets/images/about/about1.jpg" 
+                    alt="Jabbi International" 
+                    style={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                      borderRadius: '10px',
+                      boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
 
       <div className="features-area pb-75 position-relative z-1">
         <div className="container">
@@ -172,28 +168,18 @@ const Home = () => {
               >
                 <div className="single-features-info position-relative z-1">
                   <div className="content">
-                    <h2>01</h2>
+                    <h2>20+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
-                      <h3>
-                        <Link to="/services">Air Freight Services</Link>
-                      </h3>
-                      <Link className="icon" to="/services">
-                        <i className="ph ph-arrow-right" />
-                      </Link>
+                      <h3>Years of Experience</h3>
                     </div>
                   </div>
                   <div className="hover-content">
-                    <h2>01</h2>
-                    <h3>
-                      <Link to="services">Air Freight Services</Link>
-                    </h3>
+                    <h2>20+</h2>
+                    <h3>Years of Experience</h3>
                     <p>
-                      Transportation is a vital aspect of modern life, shaping the way
-                      people and goods move from one place to another.
+                      Over two decades of expertise in customs clearance and freight forwarding, 
+                      serving clients with reliable and efficient logistics solutions.
                     </p>
-                    <Link className="icon" to="services">
-                      <i className="ph ph-arrow-right" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -212,28 +198,18 @@ const Home = () => {
               >
                 <div className="single-features-info position-relative z-1">
                   <div className="content">
-                    <h2>02</h2>
+                    <h2>100+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
-                      <h3>
-                        <Link to="services">Logistic Services</Link>
-                      </h3>
-                      <Link className="icon" href="services">
-                        <i className="ph ph-arrow-right" />
-                      </Link>
+                      <h3>Clients Served</h3>
                     </div>
                   </div>
                   <div className="hover-content">
-                    <h2>02</h2>
-                    <h3>
-                      <Link to="services">Logistic Services</Link>
-                    </h3>
+                    <h2>100+</h2>
+                    <h3>Clients Served</h3>
                     <p>
-                      Transportation is a vital aspect of modern life, shaping the way
-                      people and goods move from one place to another.
+                      Trusted by over 100 businesses across multiple industries for their 
+                      import/export and logistics requirements.
                     </p>
-                    <Link className="icon" to="services">
-                      <i className="ph ph-arrow-right" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -252,28 +228,18 @@ const Home = () => {
               >
                 <div className="single-features-info position-relative z-1">
                   <div className="content">
-                    <h2>03</h2>
+                    <h2>5,500+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
-                      <h3>
-                        <Link href="services">Road Transport</Link>
-                      </h3>
-                      <Link className="icon" href="services">
-                        <i className="ph ph-arrow-right" />
-                      </Link>
+                      <h3>Shipments Completed</h3>
                     </div>
                   </div>
                   <div className="hover-content">
-                    <h2>03</h2>
-                    <h3>
-                      <Link to="services">Road Transport</Link>
-                    </h3>
+                    <h2>5,500+</h2>
+                    <h3>Shipments Completed</h3>
                     <p>
-                      Transportation is a vital aspect of modern life, shaping the way
-                      people and goods move from one place to another.
+                      Successfully completed over 5,500 shipments worldwide with a proven 
+                      track record of on-time delivery and customer satisfaction.
                     </p>
-                    <Link className="icon" to="services">
-                      <i className="ph ph-arrow-right" />
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -281,8 +247,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
 
       <div className="about-area pb-75">
         <div className="container">
@@ -306,16 +270,20 @@ const Home = () => {
                     <span className="sub-title position-relative d-block">
                       About Us
                     </span>
-                    <h2>Welcome to our Transport Company.</h2>
+                    <h2>Jabbi International</h2>
                   </div>
                   <p>
-                    The efficiency and reliability of transport systems play a crucial
-                    role in connecting communities, driving economic growth, and
-                    fostering global interactions. With advancements in technology,
+                    Jabbi International is a trusted name in customs clearance and freight forwarding, 
+                    proudly serving clients for over two decades. With deep industry expertise and 
+                    strong relationships with port and customs authorities, we provide fast, reliable, 
+                    and compliant solutions for both imports and exports.
                   </p>
                   <h6 className="growth">
-                    Competently Implement efficient e - Commerce without cross-unit
-                    growth strategies.
+                    Our services cover sea, air, and land freight forwarding, warehousing, and complete 
+                    documentation assistance, ensuring a smooth end-to-end process for our clients. 
+                    Over the years, we have built a reputation for professionalism, transparency, and 
+                    timely delivery, becoming the logistics partner of choice for businesses across 
+                    multiple industries.
                   </h6>
                   <ul className="list-unstyled ps-0 mb-0 about-btn">
                     <li className="d-inline-block">
@@ -323,20 +291,6 @@ const Home = () => {
                         Learn More
                         <i className="ph-bold ph-arrow-right" />
                       </Link>
-                    </li>
-                    <li className="d-inline-block">
-                      <div className="user d-flex align-items-center">
-                        <div className="image">
-                          <img
-                            src="assets/images/about/about1.jpg"
-                            alt="about-image"
-                          />
-                        </div>
-                        <div className="content">
-                          <h3>Nosaki Car</h3>
-                          <p>Product Designer</p>
-                        </div>
-                      </div>
                     </li>
                   </ul>
                 </div>
@@ -355,17 +309,11 @@ const Home = () => {
                         >
                           <i className="ph-fill ph-play" />
                         </a>
-                        <span className="experience">28+ Years Experience</span>
+                        <span className="experience">20+ Years Experience</span>
                       </div>
                     </div>
                     <div className="col-lg-4 col-sm-4">
                       <div className="content">
-                        <div className="content-info">
-                          <h2>
-                            <span className="counter">20</span>+
-                          </h2>
-                          <p>Years of Experience</p>
-                        </div>
                         <div className="content-info">
                           <h2>
                             <span className="counter">100</span>+
@@ -378,6 +326,12 @@ const Home = () => {
                           </h2>
                           <p>Shipments Completed</p>
                         </div>
+                        <div className="content-info">
+                          <h2>
+                            <span className="counter">20</span>+
+                          </h2>
+                          <p>Years Experience</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -387,9 +341,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
-
 
       <div className="services-area pb-75">
         <div className="container">
@@ -408,16 +359,19 @@ const Home = () => {
                   animationFillMode: "both"
                 }}
               >
-                <div className="col-lg-12 col-sm-12">
-                  <div className="section-title text-center">
+                <div className="col-lg-8 col-sm-8">
+                  <div className="section-title">
                     <span className="d-block sub-title position-relative">
                       Our Services
                     </span>
                     <h2>Complete Range of Logistics & Trade Facilitation Services</h2>
-                    <p className="mt-3">
-                      At Jabbi International, we provide a complete range of logistics and trade facilitation services designed to make your import and export operations smooth and stress-free.
-                    </p>
                   </div>
+                </div>
+                <div className="col-lg-4 col-sm-4">
+                  <Link className="default-btn style-1" to="/services">
+                    See All
+                    <i className="ph-bold ph-arrow-right" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -448,18 +402,18 @@ const Home = () => {
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="/services">Customs Clearance</a>
+                      <Link to="/services">Customs Clearance</Link>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="/services">Customs Clearance</a>
+                      <Link to="/services">Customs Clearance</Link>
                     </h3>
                     <p>Fast and efficient clearance for imports and exports, ensuring compliance with all regulations and minimizing delays at ports and borders.</p>
-                    <a href="/services" className="read-more">
+                    <Link to="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -485,18 +439,18 @@ const Home = () => {
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="/services">Freight Consultancy</a>
+                      <Link to="/services">Freight Consultancy</Link>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="/services">Freight Consultancy</a>
+                      <Link to="/services">Freight Consultancy</Link>
                     </h3>
                     <p>Expert advice on the most cost-effective and time-efficient transport modes, routes, and strategies for your shipments.</p>
-                    <a href="/services" className="read-more">
+                    <Link to="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -522,18 +476,18 @@ const Home = () => {
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="/services">Documentation Assistance</a>
+                      <Link to="/services">Documentation Assistance</Link>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="/services">Documentation Assistance</a>
+                      <Link to="/services">Documentation Assistance</Link>
                     </h3>
                     <p>Complete support for all shipping and trade documents, including bills of lading, commercial invoices, packing lists, and customs forms.</p>
-                    <a href="/services" className="read-more">
+                    <Link to="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -559,358 +513,18 @@ const Home = () => {
                   </div>
                   <div className="content">
                     <h3>
-                      <a href="/services">In-Country Transport</a>
+                      <Link to="/services">In-Country Transport</Link>
                     </h3>
                   </div>
                   <div className="hover-content">
                     <h3>
-                      <a href="/services">In-Country Transport</a>
+                      <Link to="/services">In-Country Transport</Link>
                     </h3>
                     <p>Secure and timely domestic transportation from ports to warehouses, factories, or final delivery points.</p>
-                    <a href="/services" className="read-more">
+                    <Link to="/services" className="read-more">
                       Read More
                       <i className="ph-bold ph-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div className="testimonial-area">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div
-              className="row"
-              data-cue="slideInUp"
-              data-show="true"
-              style={{
-                animationName: "slideInUp",
-                animationDuration: "600ms",
-                animationTimingFunction: "ease",
-                animationDelay: "0ms",
-                animationDirection: "normal",
-                animationFillMode: "both"
-              }}
-            >
-              <div className="col-lg-5">
-                <div className="testimonial-content">
-                  <div className="section-title">
-                    <span className="d-block sub-title position-relative">
-                      Our Testimonial
-                    </span>
-                    <h2>Our Client's Feedback</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-7">
-                <div className="testimonial-card">
-                  <div className="testimonial-slider owl-carousel owl-nav owl-loaded owl-drag">
-                    <div className="owl-stage-outer">
-                      <div
-                        className="owl-stage"
-                        style={{
-                          transform: "translate3d(-1395px, 0px, 0px)",
-                          transition: "0.25s",
-                          width: 4883
-                        }}
-                      >
-                        <div
-                          className="owl-item cloned"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item cloned"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item active"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item cloned"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="owl-item cloned"
-                          style={{ width: "672.5px", marginRight: 25 }}
-                        >
-                          <div className="single-testimonial-card">
-                            <h6 className="d-flex align-items-center">
-                              4.5
-                              <i className="ph-fill ph-star" />
-                            </h6>
-                            <p>
-                              Identifying and mitigating risks associated with global
-                              logistics, such as geopolitical issues, natural
-                              disasters, and supply chain disruptions. Knowledge of
-                              various shipping methods,including air, sea, and land
-                              transport. Familiarity with freight forwarding, customs
-                              regulations, and documentation required for
-                              international shipments.
-                            </p>
-                            <div className="user d-flex align-items-center">
-                              <div className="image">
-                                <img
-                                  src="assets/images/testimonial/testimonial1.jpg"
-                                  alt="testimonial-image"
-                                />
-                              </div>
-                              <div className="content">
-                                <h3>Cary Marathi</h3>
-                                <p>Designer</p>
-                              </div>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/images/quotes-icon.svg"
-                                alt="quote-icon"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="owl-nav">
-                      <button type="button" role="presentation" className="owl-prev">
-                        <i className="ph-bold ph-arrow-left" />
-                      </button>
-                      <button type="button" role="presentation" className="owl-next">
-                        <i className="ph-bold ph-arrow-right" />
-                      </button>
-                    </div>
-                    <div className="owl-dots disabled" />
-                    <div className="owl-thumbs" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1051,315 +665,6 @@ const Home = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="blog-area pt-100 pb-75">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div className="blog-section-title">
-              <div
-                className="row align-items-center"
-                data-cue="slideInUp"
-                data-show="true"
-                style={{
-                  animationName: "slideInUp",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="col-lg-8 col-sm-8">
-                  <div className="section-title">
-                    <span className="d-block sub-title position-relative">
-                      Latest News
-                    </span>
-                    <h2>Industry Updates & Insights</h2>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-4">
-                  <Link className="default-btn style-1" to="/blog">
-                    View All News
-                    <i className="ph-bold ph-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div
-              className="row justify-content-center"
-              data-cues="fadeIn"
-              data-disabled="true"
-            >
-              <div
-                className="col-lg-4 col-md-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-blog-card">
-                  <div className="image">
-                    <Link to="/blog" className="d-block">
-                      <img src="assets/images/blog/blog1.jpg" alt="blog-image" />
-                    </Link>
-                  </div>
-                  <div className="content d-flex justify-content-between">
-                    <div className="text position-relative">
-                      <ul className="list-unstyled ps-0">
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-user-circle" />
-                          <Link to="/blog">Admin</Link>
-                        </li>
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-chat-teardrop-dots" />
-                          (02) Comment
-                        </li>
-                      </ul>
-                      <h3>
-                        <Link to="/blog">
-                          New Shipping Routes from Karachi Port
-                        </Link>
-                      </h3>
-                      <p>Expanding our global reach with new direct routes to major markets.</p>
-                    </div>
-                    <div className="date">
-                      <h3>25</h3>
-                      <p>Nov</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "180ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-blog-card">
-                  <div className="image">
-                    <Link to="/blog">
-                      <img src="assets/images/blog/blog2.jpg" alt="blog-image" />
-                    </Link>
-                  </div>
-                  <div className="content d-flex justify-content-between">
-                    <div className="text position-relative">
-                      <ul className="list-unstyled ps-0">
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-user-circle" />
-                          <Link to="/blog">Admin</Link>
-                        </li>
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-chat-teardrop-dots" />
-                          (02) Comment
-                        </li>
-                      </ul>
-                      <h3>
-                        <Link to="/blog">
-                          Customs Regulations Update 2024
-                        </Link>
-                      </h3>
-                      <p>Latest updates on import/export regulations and compliance requirements.</p>
-                    </div>
-                    <div className="date">
-                      <h3>26</h3>
-                      <p>Nov</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "360ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-blog-card">
-                  <div className="image">
-                    <Link to="/blog">
-                      <img src="assets/images/blog/blog3.jpg" alt="blog-image" />
-                    </Link>
-                  </div>
-                  <div className="content d-flex justify-content-between">
-                    <div className="text position-relative">
-                      <ul className="list-unstyled ps-0">
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-user-circle" />
-                          <Link to="/blog">Admin</Link>
-                        </li>
-                        <li className="d-inline-block position-relative">
-                          <i className="ph ph-chat-teardrop-dots" />
-                          (02) Comment
-                        </li>
-                      </ul>
-                      <h3>
-                        <Link to="/blog">
-                          Sustainable Logistics Solutions
-                        </Link>
-                      </h3>
-                      <p>Implementing eco-friendly practices in our freight operations.</p>
-                    </div>
-                    <div className="date">
-                      <h3>28</h3>
-                      <p>Nov</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="partner-area pb-100">
-        <div className="container">
-          <div className="main-max-width mx-auto">
-            <div
-              className="section-title text-center"
-              data-cue="slideInUp"
-              data-show="true"
-              style={{
-                animationName: "slideInUp",
-                animationDuration: "600ms",
-                animationTimingFunction: "ease",
-                animationDelay: "0ms",
-                animationDirection: "normal",
-                animationFillMode: "both"
-              }}
-            >
-              <span className="d-inline-block sub-title position-relative">
-                Trusted Partners
-              </span>
-              <h2>Our Global Network</h2>
-            </div>
-            <div className="row gx-0" data-cues="fadeIn" data-disabled="true">
-              <div
-                className="col-lg-3 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "0ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-partner-info position-relative">
-                  <div className="image">
-                    <img
-                      src="assets/images/partner/partner-logo1.png"
-                      alt="partner-logo"
-                    />
-                  </div>
-                  <div className="hover-image">
-                    <img
-                      src="assets/images/partner/partner-logo5.png"
-                      alt="partner-logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "180ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-partner-info position-relative active">
-                  <img
-                    src="assets/images/partner/partner-logo8.png"
-                    alt="partner-logo"
-                  />
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "360ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-partner-info position-relative">
-                  <div className="image">
-                    <img
-                      src="assets/images/partner/partner-logo3.png"
-                      alt="partner-logo"
-                    />
-                  </div>
-                  <div className="hover-image">
-                    <img
-                      src="assets/images/partner/partner-logo6.png"
-                      alt="partner-logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 col-sm-6"
-                data-cue="fadeIn"
-                data-show="true"
-                style={{
-                  animationName: "fadeIn",
-                  animationDuration: "600ms",
-                  animationTimingFunction: "ease",
-                  animationDelay: "540ms",
-                  animationDirection: "normal",
-                  animationFillMode: "both"
-                }}
-              >
-                <div className="single-partner-info position-relative">
-                  <div className="image">
-                    <img
-                      src="assets/images/partner/partner-logo4.png"
-                      alt="partner-logo"
-                    />
-                  </div>
-                  <div className="hover-image">
-                    <img
-                      src="assets/images/partner/partner-logo7.png"
-                      alt="partner-logo"
-                    />
                   </div>
                 </div>
               </div>
