@@ -99,8 +99,8 @@ const Home = () => {
                 animationFillMode: "both"
               }}
             >
-              <div className="col-lg-6">
-                <div className="banner-content">
+              <div className="col-lg-12">
+                <div className="banner-content text-center">
                   <div className="title">
                     <span className="sub-title position-relative d-block">
                       Jabbi International
@@ -126,20 +126,6 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="banner-image text-center">
-                  <img 
-                    src="assets/images/about/about1.jpg" 
-                    alt="Jabbi International" 
-                    style={{
-                      maxWidth: '100%',
-                      height: 'auto',
-                      borderRadius: '10px',
-                      boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
-                    }}
-                          />
-                        </div>
-                      </div>
             </div>
           </div>
         </div>

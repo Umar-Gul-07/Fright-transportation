@@ -102,33 +102,6 @@ function Header() {
                     </li>
                   </ul>
                 </div>
-
-                {/* Desktop Menu Options */}
-                <div className="others-option position-relative d-none d-lg-flex align-items-center">
-                  <div className="option-item">
-                    <form>
-                      <div className="form-group position-relative">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Search services..."
-                        />
-                        <button type="submit" className="border-0 bg-transparent p-0">
-                          <i className="ph ph-magnifying-glass" />
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <div className="option-item">
-                    <Link 
-                      className="default-btn" 
-                      to="/contact"
-                      onClick={handleNavClick}
-                    >
-                      Get Quote
-                    </Link>
-                  </div>
-                </div>
               </nav>
             </div>
           </div>
