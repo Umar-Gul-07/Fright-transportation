@@ -23,24 +23,18 @@ function Footer() {
                             >
                                 <div className="single-footer-widget subscribe-info">
                                     <div className="logo">
-                                        <a href="index.html">
-                                            <img src="assets/images/white-logo.png" alt="white-logo" />
-                                        </a>
+                                        <Link to="/">
+                                            <div className="jabbi-logo-white">
+                                                <div className="logo-main-white">Jabbi</div>
+                                                <div className="logo-sub-white">International</div>
+                                            </div>
+                                        </Link>
                                     </div>
                                     <p>
-                                        Logistics involves the management of the flow of goods,
-                                        information, and resources between the point of origin.
+                                        Your trusted partner in customs clearance and freight forwarding, 
+                                        providing fast, reliable, and hassle-free solutions for your 
+                                        import and export needs.
                                     </p>
-                                    <form>
-                                        <div className="form-group position-relative">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                placeholder="Email Address"
-                                            />
-                                            <button type="submit">Subscribe</button>
-                                        </div>
-                                    </form>
                                     <SocialMediaLinks />
                                 </div>
                             </div>
@@ -102,12 +96,11 @@ function Footer() {
                                     <ul className="list-unstyled ps-0 contact-list">
                                         <li className="position-relative">
                                             <i className="ph-fill ph-phone" />
-                                            <a href="tel:123456789">{ContactInfo.contact_phone}</a>
+                                            <a href={`tel:${ContactInfo.contact_phone}`}>{ContactInfo.contact_phone}</a>
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-fill ph-envelope" />
-                                            <a href="mailto:jabbiinternational@yahoo.com">{ContactInfo.contact_email}</a>
-                                            <a href="mailto:jabbiinternational@gmail.com">{ContactInfo.contact_email_yahoo}</a>
+                                            <a href={`mailto:${ContactInfo.contact_email}`}>{ContactInfo.contact_email}</a>
                                         </li>
                                         <li className="position-relative">
                                             <i className="ph-bold ph-whatsapp-logo" />
@@ -130,7 +123,8 @@ function Footer() {
                                     </ul>
                                     <div className="times">
                                         <h6>Open Hours :</h6>
-                                        <p>Mon - Sat: 8 am - 5 pm.</p>
+                                        <p>Mon - Fri: 8 am - 6 pm</p>
+                                        <p>Saturday: 9 am - 4 pm</p>
                                         <span>
                                             Sunday: <strong>Closed</strong>
                                         </span>
@@ -150,63 +144,28 @@ function Footer() {
                                     animationFillMode: "both"
                                 }}
                             >
-                                <div className="single-footer-widget projects-info">
-                                    <h3>Our Projects</h3>
-                                    <div className="row g-0">
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="image ms-0">
-                                                <a href="portfolio.html">
-                                                    <img
-                                                        src="assets/images/footer/footer1.jpg"
-                                                        alt="footer-image"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="image me-0">
-                                                <a href="portfolio.html">
-                                                    <img
-                                                        src="assets/images/footer/footer2.jpg"
-                                                        alt="footer-image"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="image ms-0">
-                                                <a href="portfolio.html">
-                                                    <img
-                                                        src="assets/images/footer/footer3.jpg"
-                                                        alt="footer-image"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-sm-6">
-                                            <div className="image me-0">
-                                                <a href="portfolio.html">
-                                                    <img
-                                                        src="assets/images/footer/footer4.jpg"
-                                                        alt="footer-image"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div className="single-footer-widget services-info">
+                                    <h3>Our Services</h3>
+                                    <ul className="list-unstyled ps-0 mb-0">
+                                        <li>
+                                            <Link to="/services">Customs Clearance</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/services">Freight Consultancy</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/services">Documentation Assistance</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/services">In-Country Transport</Link>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
 
             <div className="copyright-area">
                 <div className="container">
@@ -226,7 +185,7 @@ function Footer() {
                         >
                             <div className="col-lg-6 col-md-7">
                                 <div className="copyright-content">
-                                    <p>© 2025 jabbiinternational, a fright transportation Services. All rights reserved.</p>
+                                    <p>© 2025 Jabbi International, a freight transportation services company. All rights reserved.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-5">

@@ -120,58 +120,30 @@ const teamMembers = [
 const freightServices = [
     {
         id: 1,
-        title: "Sea Freight Services",
-        description: "Comprehensive ocean freight solutions from Karachi Port to worldwide destinations",
-        icon: "ph-bold ph-ship",
+        title: "Customs Clearance",
+        description: "Fast and efficient clearance for imports and exports, ensuring compliance with all regulations and minimizing delays at ports and borders",
+        icon: "ph-bold ph-file-text",
         image: "assets/images/services/services1.jpg"
     },
     {
         id: 2,
-        title: "Air Freight Services",
-        description: "Express air freight for time-sensitive shipments with global reach",
-        icon: "ph-bold ph-airplane",
+        title: "Freight Consultancy",
+        description: "Expert advice on the most cost-effective and time-efficient transport modes, routes, and strategies for your shipments",
+        icon: "ph-bold ph-lightbulb",
         image: "assets/images/services/services2.jpg"
     },
     {
         id: 3,
-        title: "Customs Clearance",
-        description: "Expert customs documentation and clearance services for smooth operations",
-        icon: "ph-bold ph-file-text",
+        title: "Documentation Assistance",
+        description: "Complete support for all shipping and trade documents, including bills of lading, commercial invoices, packing lists, and customs forms",
+        icon: "ph-bold ph-files",
         image: "assets/images/services/services3.jpg"
     },
     {
         id: 4,
-        title: "Warehousing & Storage",
-        description: "Secure warehousing facilities with temperature-controlled options",
-        icon: "ph-bold ph-warehouse",
-        image: "assets/images/services/services4.jpg"
-    },
-    {
-        id: 5,
-        title: "Door-to-Door Delivery",
-        description: "Complete logistics solutions from origin to final destination",
+        title: "In-Country Transport",
+        description: "Secure and timely domestic transportation from ports to warehouses, factories, or final delivery points",
         icon: "ph-bold ph-truck",
-        image: "assets/images/services/services1.jpg"
-    },
-    {
-        id: 6,
-        title: "Project Cargo",
-        description: "Specialized handling for oversized and heavy equipment shipments",
-        icon: "ph-bold ph-gear",
-        image: "assets/images/services/services2.jpg"
-    },
-    {
-        id: 7,
-        title: "Container Services",
-        description: "FCL and LCL container services with flexible scheduling",
-        icon: "ph-bold ph-container",
-        image: "assets/images/services/services3.jpg"
-    },
-    {
-        id: 8,
-        title: "Supply Chain Solutions",
-        description: "End-to-end supply chain management and optimization",
-        icon: "ph-bold ph-flow-arrow",
         image: "assets/images/services/services4.jpg"
     }
 ];
