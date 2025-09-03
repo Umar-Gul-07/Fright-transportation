@@ -85,7 +85,7 @@
 
 .logo-main-white {
   font-size: 32px;
-  color: #ffffff;
+  color: #FF6B35;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: -2px;
@@ -93,7 +93,7 @@
 
 .logo-sub-white {
   font-size: 12px;
-  color: #3498db;
+  color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
@@ -172,4 +172,186 @@
   color: #3498db;
   font-weight: 500;
   line-height: 1.2;
+}
+
+/* Why Choose Us Section */
+.why-choose-area {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.single-why-choose {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.single-why-choose:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.15);
+  border-color: rgba(52, 152, 219, 0.3);
+}
+
+.single-why-choose .icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  transition: all 0.3s ease;
+}
+
+.single-why-choose:hover .icon {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+
+.single-why-choose .icon i {
+  font-size: 35px;
+  color: white;
+}
+
+.single-why-choose h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.single-why-choose p {
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Mission Vision Section */
+.mission-vision-area {
+  background: white;
+  padding: 80px 0;
+}
+
+.mission-card, .vision-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card::before, .vision-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.mission-card:hover, .vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(52, 152, 219, 0.15);
+}
+
+.mission-card .icon, .vision-card .icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.mission-card .icon i, .vision-card .icon i {
+  font-size: 30px;
+  color: white;
+}
+
+.mission-card h3, .vision-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.mission-card p, .vision-card p {
+  color: #5a6c7d;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Expertise Section */
+.expertise-area {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.expertise-item {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.expertise-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(52, 152, 219, 0.15);
+  border-color: rgba(52, 152, 219, 0.3);
+}
+
+.expertise-item .icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #FF6B35, #e55a2b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.expertise-item:hover .icon {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+}
+
+.expertise-item .icon i {
+  font-size: 28px;
+  color: white;
+}
+
+.expertise-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.expertise-item p {
+  color: #5a6c7d;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
 }

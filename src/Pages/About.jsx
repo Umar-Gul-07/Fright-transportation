@@ -117,51 +117,46 @@ function About() {
                 </div>
             </div>
 
-            <div className="about-area pt-100 pb-75">
+            <div className="about-area ptb-100">
                 <div className="container">
                     <div className="main-max-width mx-auto">
-                        <div
-                            className="row align-items-center"
-                            data-cue="slideInUp"
-                            data-show="true"
-                            style={{
-                                animationName: "slideInUp",
-                                animationDuration: "600ms",
-                                animationTimingFunction: "ease",
-                                animationDelay: "0ms",
-                                animationDirection: "normal",
-                                animationFillMode: "both"
-                            }}
-                        >
-                            <div className="col-lg-5">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6">
                                 <div className="about-content">
                                     <div className="section-title">
-                                        <span className="sub-title position-relative d-block">
-                                            About Jabbi International
+                                        <span className="d-block sub-title position-relative">
+                                            About Us
                                         </span>
-                                        <h2>Your Trusted Partner in Global Freight Transportation</h2>
+                                        <h2>Your Trusted Partner in Global Logistics</h2>
                                     </div>
-                                    <p>
-                                        Founded with a vision to provide reliable and efficient freight transportation 
-                                        services, Jabbi International has established itself as a leading logistics 
-                                        company specializing in import/export operations from Karachi Port.
+                                    <p className="mb-4">
+                                        Jabbi International is a trusted name in customs clearance and freight forwarding, proudly serving clients for over two decades.
                                     </p>
-                                    <h6 className="growth">
-                                        With years of experience in international shipping, customs clearance, and 
-                                        supply chain management, we ensure your cargo reaches its destination safely 
-                                        and on schedule.
-                                    </h6>
-                                    <ul className="list-unstyled ps-0 mb-0 about-btn">
-                                        <li className="d-inline-block">
-                                            <Link className="default-btn style-1" to="/services">
-                                                Our Services
-                                                <i className="ph-bold ph-arrow-right" />
-                                            </Link>
-                                        </li>
-                                    </ul>
+                                    <p className="mb-4">
+                                        With deep industry expertise and strong relationships with port and customs authorities, we provide fast, reliable, and compliant solutions for both imports and exports.
+                                    </p>
+                                    <p className="mb-4">
+                                        Our services cover sea, air, and land freight forwarding, warehousing, and complete documentation assistance, ensuring a smooth end-to-end process for our clients. Over the years, we have built a reputation for professionalism, transparency, and timely delivery, becoming the logistics partner of choice for businesses across multiple industries.
+                                    </p>
+                                    <div className="about-btn">
+                                        <ul className="list-unstyled mb-0">
+                                            <li className="d-inline-block">
+                                                <Link className="default-btn style-1" to="/services">
+                                                    Our Services
+                                                    <i className="ph-bold ph-arrow-right" />
+                                                </Link>
+                                            </li>
+                                            <li className="d-inline-block">
+                                                <Link className="default-btn style-2" to="/contact">
+                                                    Get Quote
+                                                    <i className="ph-bold ph-arrow-right" />
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="col-lg-6">
                                 <div className="about-image">
                                     <div className="row align-items-center">
                                         <div className="col-lg-8 col-sm-8">
@@ -200,6 +195,134 @@ function About() {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="why-choose-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Why Choose Us
+                                    </span>
+                                    <h2>What Makes Jabbi International Different</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="single-why-choose text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-shield-check" />
+                                    </div>
+                                    <h3>Trusted & Reliable</h3>
+                                    <p>Two decades of proven excellence in customs clearance and freight forwarding, building lasting relationships with clients and authorities.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="single-why-choose text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-clock" />
+                                    </div>
+                                    <h3>Fast & Efficient</h3>
+                                    <p>Strong relationships with port and customs authorities ensure quick clearance and timely delivery of your shipments.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="single-why-choose text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-globe" />
+                                    </div>
+                                    <h3>Global Network</h3>
+                                    <p>Comprehensive coverage across sea, air, and land freight with warehousing and documentation support worldwide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mission-vision-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="mission-card">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-target" />
+                                    </div>
+                                    <h3>Our Mission</h3>
+                                    <p>To provide seamless, compliant, and cost-effective logistics solutions that empower businesses to expand their global reach while maintaining the highest standards of professionalism and transparency.</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="vision-card">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-eye" />
+                                    </div>
+                                    <h3>Our Vision</h3>
+                                    <p>To be the leading logistics partner in the region, known for innovation, reliability, and exceptional customer service, driving the success of our clients' international trade operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="expertise-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Our Expertise
+                                    </span>
+                                    <h2>Comprehensive Logistics Solutions</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-ship" />
+                                    </div>
+                                    <h4>Sea Freight</h4>
+                                    <p>Efficient ocean transportation with global port coverage</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-airplane" />
+                                    </div>
+                                    <h4>Air Freight</h4>
+                                    <p>Fast air cargo solutions for time-sensitive shipments</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-truck" />
+                                    </div>
+                                    <h4>Land Transport</h4>
+                                    <p>Reliable ground transportation and warehousing</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-file-text" />
+                                    </div>
+                                    <h4>Documentation</h4>
+                                    <p>Complete trade documentation and compliance support</p>
                                 </div>
                             </div>
                         </div>
