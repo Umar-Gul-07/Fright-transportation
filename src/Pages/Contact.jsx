@@ -335,45 +335,38 @@ ${formData.name}
                         <div className="col-lg-9">
                             <div className="contact-map-info">
                                 <div 
-                                    className="map-placeholder"
+                                    className="map-container"
                                     style={{
                                         width: '100%',
                                         height: '400px',
-                                        background: 'linear-gradient(45deg, #f0f0f0, #e0e0e0)',
                                         borderRadius: '10px',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        cursor: 'pointer',
-                                        position: 'relative',
+                                        overflow: 'hidden',
                                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
                                     }}
-                                    onClick={() => window.open(ContactInfo.googleMapsDirectUrl, '_blank')}
-                                    title="Click to open Google Maps"
                                 >
-                                    <div style={{ fontSize: '48px', marginBottom: '20px' }}>🗺️</div>
-                                    <h3 style={{ margin: '0 0 10px 0', color: '#333' }}>Jabbi International Office</h3>
-                                    <p style={{ margin: '0 0 20px 0', color: '#666', textAlign: 'center' }}>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.1234567890123!2d67.0599219!3d24.8593045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e9c7ac77bb7%3A0x825356c82a1f6a16!2sDelhi%20Sweets!5e0!3m2!1sen!2spk!4v1234567890123"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Jabbi International Office Location"
+                                    ></iframe>
+                                </div>
+                                <div style={{ 
+                                    textAlign: 'center', 
+                                    marginTop: '15px',
+                                    padding: '15px',
+                                    background: 'rgba(52, 152, 219, 0.05)',
+                                    borderRadius: '8px',
+                                    border: '1px solid rgba(52, 152, 219, 0.1)'
+                                }}>
+                                    <h4 style={{ margin: '0 0 10px 0', color: '#2c3e50' }}>📍 Office Location</h4>
+                                    <p style={{ margin: '0', color: '#5a6c7d' }}>
                                         {ContactInfo.address}
                                     </p>
-                                    <button 
-                                        style={{
-                                            padding: '12px 24px',
-                                            backgroundColor: '#25d366',
-                                            color: 'white',
-                                            border: 'none',
-                                            borderRadius: '6px',
-                                            cursor: 'pointer',
-                                            fontSize: '16px',
-                                            fontWeight: '500',
-                                            transition: 'all 0.3s ease'
-                                        }}
-                                        onMouseEnter={(e) => e.target.style.backgroundColor = '#128c7e'}
-                                        onMouseLeave={(e) => e.target.style.backgroundColor = '#25d366'}
-                                    >
-                                        Open in Google Maps
-                                    </button>
                                 </div>
                             </div>
                         </div>

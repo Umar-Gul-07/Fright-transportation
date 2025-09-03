@@ -298,8 +298,8 @@ const Home = () => {
                           <img src="assets/images/team/team1.jpg" alt="CEO & Founder" />
                         </div>
                         <div className="user-info">
-                          <h4>CEO & Founder</h4>
-                          <p>Jabbi International</p>
+                          <h4>Waheed Khan</h4>
+                          <p>CEO & Founder</p>
                         </div>
                       </div>
                     </li>
