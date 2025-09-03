@@ -158,17 +158,6 @@ function About() {
                                                 <i className="ph-bold ph-arrow-right" />
                                             </Link>
                                         </li>
-                                        <li className="d-inline-block">
-                                            <div className="user-block">
-                                                <div className="user-image">
-                                                    <img src="assets/images/team/team1.jpg" alt="CEO & Founder" />
-                                                </div>
-                                                <div className="user-info">
-                                                    <h4>Waheed Khan</h4>
-                                                    <p>CEO & Founder</p>
-                                                </div>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -211,6 +200,112 @@ function About() {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="team-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="team-section-title">
+                            <div
+                                className="row align-items-center"
+                                data-cue="slideInUp"
+                                data-show="true"
+                                style={{
+                                    animationName: "slideInUp",
+                                    animationDuration: "600ms",
+                                    animationTimingFunction: "ease",
+                                    animationDelay: "0ms",
+                                    animationDirection: "normal",
+                                    animationFillMode: "both"
+                                }}
+                            >
+                                <div className="col-lg-8 col-sm-8">
+                                    <div className="section-title">
+                                        <span className="d-block sub-title position-relative">
+                                            Our Team
+                                        </span>
+                                        <h2>Meet Our Leadership Team</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className="row justify-content-center"
+                            data-cues="fadeIn"
+                            data-disabled="true"
+                        >
+                            <div
+                                className="col-lg-4 col-sm-6"
+                                data-cue="fadeIn"
+                                data-show="true"
+                                style={{
+                                    animationName: "fadeIn",
+                                    animationDuration: "600ms",
+                                    animationTimingFunction: "ease",
+                                    animationDelay: "0ms",
+                                    animationDirection: "normal",
+                                    animationFillMode: "both"
+                                }}
+                            >
+                                <div className="single-team-info position-relative z-1">
+                                    <div className="image">
+                                        <img
+                                            src="assets/images/team/team1.jpg"
+                                            alt="Waheed Khan - CEO & Founder"
+                                        />
+                                    </div>
+                                    <div className="content">
+                                        <div className="text">
+                                            <h3>
+                                                <Link to="/about">Waheed Khan</Link>
+                                            </h3>
+                                            <p>CEO & Founder</p>
+                                        </div>
+                                        <div className="icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-linkedin-logo" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-twitter-logo" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank" rel="noreferrer">
+                                                        <i className="ph-bold ph-envelope" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="faq-area ptb-100">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="faq-content">
+                                    <div className="section-title">
+                                        <span className="d-block sub-title position-relative">
+                                            FAQ
+                                        </span>
+                                        <h2>Frequently Asked Questions</h2>
+                                    </div>
+                                    <p>Common questions about our services and processes.</p>
                                 </div>
                             </div>
                         </div>

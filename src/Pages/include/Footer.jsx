@@ -121,14 +121,7 @@ function Footer() {
                                             </a>
                                         </li>
                                     </ul>
-                                    <div className="times">
-                                        <h6>Open Hours :</h6>
-                                        <p>Mon - Fri: 8 am - 6 pm</p>
-                                        <p>Saturday: 9 am - 4 pm</p>
-                                        <span>
-                                            Sunday: <strong>Closed</strong>
-                                        </span>
-                                    </div>
+                                   
                                 </div>
                             </div>
                             <div
@@ -185,7 +178,7 @@ function Footer() {
                         >
                             <div className="col-lg-6 col-md-7">
                                 <div className="copyright-content">
-                                    <p>© 2025 Jabbi International, a freight transportation services company. All rights reserved.</p>
+                                    <p>© 2025 Jabbi International, freight transportation services. All rights reserved.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-md-5">
