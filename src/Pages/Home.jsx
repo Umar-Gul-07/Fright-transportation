@@ -152,7 +152,7 @@ const Home = () => {
                   animationFillMode: "both"
                 }}
               >
-                <div className="single-features-info position-relative z-1">
+                <div className="single-features-info position-relative z-1" style={{backgroundImage: 'url(assets/images/features/features1.jpg)'}}>
                   <div className="content">
                     <h2>20+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
@@ -182,7 +182,7 @@ const Home = () => {
                   animationFillMode: "both"
                 }}
               >
-                <div className="single-features-info position-relative z-1">
+                <div className="single-features-info position-relative z-1" style={{backgroundImage: 'url(assets/images/features/features2.html)'}}>
                   <div className="content">
                     <h2>100+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
@@ -212,7 +212,7 @@ const Home = () => {
                   animationFillMode: "both"
                 }}
               >
-                <div className="single-features-info position-relative z-1">
+                <div className="single-features-info position-relative z-1" style={{backgroundImage: 'url(assets/images/features/features3.jpg)'}}>
                   <div className="content">
                     <h2>5,500+</h2>
                     <div className="arrow-btn d-flex align-items-center justify-content-between">
@@ -328,6 +328,63 @@ const Home = () => {
         </div>
       </div>
 
+
+      <div className="expertise-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Our Expertise
+                                    </span>
+                                    <h2>Comprehensive Logistics Solutions</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-ship" />
+                                    </div>
+                                    <h4>Sea Freight</h4>
+                                    <p>Efficient ocean transportation with global port coverage</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-airplane" />
+                                    </div>
+                                    <h4>Air Freight</h4>
+                                    <p>Fast air cargo solutions for time-sensitive shipments</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-truck" />
+                                    </div>
+                                    <h4>Land Transport</h4>
+                                    <p>Reliable ground transportation and warehousing</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="expertise-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-file-text" />
+                                    </div>
+                                    <h4>Documentation</h4>
+                                    <p>Complete trade documentation and compliance support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
       <div className="services-area pb-75">
         <div className="container">
           <div className="main-max-width mx-auto">
