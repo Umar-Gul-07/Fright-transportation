@@ -99,7 +99,7 @@ const Home = () => {
                 animationFillMode: "both"
               }}
             >
-              <div className="col-lg-8">
+              <div className="col-lg-6">
                 <div className="banner-content">
                   <div className="title">
                     <span className="sub-title position-relative d-block">
@@ -107,9 +107,7 @@ const Home = () => {
                     </span>
                     <h1>Your Trusted Partner in Customs Clearance & Freight Forwarding</h1>
                     <p>
-                      Fast, reliable, and hassle-free solutions for your import and export needs. 
-                      With over two decades of experience, we ensure your cargo reaches its destination 
-                      safely and on time.
+                      Fast, reliable, and hassle-free solutions for your import and export needs.
                     </p>
                   </div>
                   <ul className="list-unstyled ps-0 mb-0 banner-button">
@@ -128,23 +126,18 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-6">
                 <div className="banner-image text-center">
-                  <div className="banner-visual-element">
-                    <div className="icon-container">
-                      <i className="ph-bold ph-ship" style={{ fontSize: '4rem', color: '#3498db' }}></i>
-                    </div>
-                    <div className="stats-preview">
-                      <div className="stat-item">
-                        <span className="stat-number">20+</span>
-                        <span className="stat-label">Years Experience</span>
-                      </div>
-                      <div className="stat-item">
-                        <span className="stat-number">100+</span>
-                        <span className="stat-label">Clients Served</span>
-                      </div>
-                    </div>
-                  </div>
+                  <img 
+                    src="assets/images/about/about1.jpg" 
+                    alt="Jabbi International" 
+                    style={{
+                      maxWidth: '100%',
+                      height: 'auto',
+                      borderRadius: '10px',
+                      boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+                    }}
+                  />
                 </div>
               </div>
             </div>
