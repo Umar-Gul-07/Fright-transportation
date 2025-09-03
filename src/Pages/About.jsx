@@ -330,6 +330,238 @@ function About() {
                 </div>
             </div>
 
+            <div className="stats-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="single-stat text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-trophy" />
+                                    </div>
+                                    <h2 className="counter">20</h2>
+                                    <p>Years of Excellence</p>
+                                    <div className="progress-bar">
+                                        <div className="progress" style={{width: '100%'}}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="single-stat text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-users" />
+                                    </div>
+                                    <h2 className="counter">100</h2>
+                                    <p>Happy Clients</p>
+                                    <div className="progress-bar">
+                                        <div className="progress" style={{width: '100%'}}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="single-stat text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-package" />
+                                    </div>
+                                    <h2 className="counter">5500</h2>
+                                    <p>Shipments Completed</p>
+                                    <div className="progress-bar">
+                                        <div className="progress" style={{width: '100%'}}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="single-stat text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-globe" />
+                                    </div>
+                                    <h2 className="counter">50</h2>
+                                    <p>Countries Served</p>
+                                    <div className="progress-bar">
+                                        <div className="progress" style={{width: '100%'}}></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="process-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Our Process
+                                    </span>
+                                    <h2>How We Deliver Excellence</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="process-item text-center">
+                                    <div className="step-number">01</div>
+                                    <div className="icon">
+                                        <i className="ph-bold ph-chat-circle" />
+                                    </div>
+                                    <h4>Consultation</h4>
+                                    <p>We understand your requirements and provide customized solutions</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="process-item text-center">
+                                    <div className="step-number">02</div>
+                                    <div className="icon">
+                                        <i className="ph-bold ph-file-text" />
+                                    </div>
+                                    <h4>Documentation</h4>
+                                    <p>Complete paperwork and compliance documentation handled</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="process-item text-center">
+                                    <div className="step-number">03</div>
+                                    <div className="icon">
+                                        <i className="ph-bold ph-shipping-container" />
+                                    </div>
+                                    <h4>Execution</h4>
+                                    <p>Professional handling and transportation of your cargo</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-sm-6">
+                                <div className="process-item text-center">
+                                    <div className="step-number">04</div>
+                                    <div className="icon">
+                                        <i className="ph-bold ph-check-circle" />
+                                    </div>
+                                    <h4>Delivery</h4>
+                                    <p>Timely delivery with complete tracking and support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="testimonials-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Client Testimonials
+                                    </span>
+                                    <h2>What Our Clients Say</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="testimonial-item">
+                                    <div className="quote">
+                                        <i className="ph-bold ph-quotes" />
+                                    </div>
+                                    <p>"Jabbi International has been our trusted logistics partner for over 5 years. Their professionalism and reliability are unmatched."</p>
+                                    <div className="client-info">
+                                        <div className="client-image">
+                                            <img src="assets/images/testimonial/testimonial1.jpg" alt="Client" />
+                                        </div>
+                                        <div className="client-details">
+                                            <h5>Ahmed Khan</h5>
+                                            <span>CEO, Global Trading Co.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="testimonial-item">
+                                    <div className="quote">
+                                        <i className="ph-bold ph-quotes" />
+                                    </div>
+                                    <p>"Fast customs clearance and excellent documentation support. Jabbi International makes international trade hassle-free."</p>
+                                    <div className="client-info">
+                                        <div className="client-image">
+                                            <img src="assets/images/testimonial/testimonial2.html" alt="Client" />
+                                        </div>
+                                        <div className="client-details">
+                                            <h5>Sarah Ahmed</h5>
+                                            <span>Operations Manager, Export Solutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="testimonial-item">
+                                    <div className="quote">
+                                        <i className="ph-bold ph-quotes" />
+                                    </div>
+                                    <p>"Outstanding service quality and competitive pricing. They've helped us expand our business globally with confidence."</p>
+                                    <div className="client-info">
+                                        <div className="client-image">
+                                            <img src="assets/images/testimonial/testimonial3.html" alt="Client" />
+                                        </div>
+                                        <div className="client-details">
+                                            <h5>Muhammad Ali</h5>
+                                            <span>Director, International Imports</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="certifications-area pb-75">
+                <div className="container">
+                    <div className="main-max-width mx-auto">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title text-center">
+                                    <span className="d-block sub-title position-relative">
+                                        Certifications & Awards
+                                    </span>
+                                    <h2>Recognized Excellence</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="certification-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-certificate" />
+                                    </div>
+                                    <h4>ISO 9001:2015</h4>
+                                    <p>Quality Management System Certified</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="certification-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-shield-check" />
+                                    </div>
+                                    <h4>Customs Licensed</h4>
+                                    <p>Authorized Customs Clearing Agent</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6">
+                                <div className="certification-item text-center">
+                                    <div className="icon">
+                                        <i className="ph-bold ph-star" />
+                                    </div>
+                                    <h4>Industry Award</h4>
+                                    <p>Best Logistics Provider 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="team-area pb-75">
                 <div className="container">
                     <div className="main-max-width mx-auto">
